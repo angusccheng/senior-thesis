@@ -1,0 +1,677 @@
+{
+  "queries": [
+    "Pedestrians crossing a wide crosswalk at a busy city intersection.",
+    "Yellow taxis driving through an intersection.",
+    "A bus passing through a crowded intersection."
+  ],
+  "commands": [
+    {
+      "command": "HF_HUB_OFFLINE=1 /Users/anguscheng/Downloads/video-search-baseline/.venv/bin/python scripts/run_development_experiment.py --worker index --metrics experiments/nyc_dev_uniform_5s_v2/index.metrics.json --original-source '/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov' -- index --video /Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.mp4 --interval 5 --batch-size 16 --threads 4 --dataset-manifest data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.dataset.json --index indexes/nyc_dev_uniform_5s_v2/index.npz",
+      "wall_seconds": 35.92960320902057,
+      "returncode": 0,
+      "stdout": "Loading OpenCLIP (first run downloads weights)...\nIndexed 120 frames; payload 248,640 bytes; archive 285,134 bytes\nSaved indexes/nyc_dev_uniform_5s_v2/index.npz and indexes/nyc_dev_uniform_5s_v2/index.metadata.json\n",
+      "stderr": "",
+      "metrics": {
+        "operation_seconds_excluding_imports": 25.69728324993048,
+        "peak_rss_bytes": 648298496,
+        "rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; Darwin bytes, Linux KiB converted to bytes",
+        "retrieval_guards": false
+      }
+    },
+    {
+      "command": "HF_HUB_OFFLINE=1 /Users/anguscheng/Downloads/video-search-baseline/.venv/bin/python scripts/run_development_experiment.py --worker search --metrics experiments/nyc_dev_uniform_5s_v2/query_01.metrics.json --original-source '/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov' -- search --query 'Pedestrians crossing a wide crosswalk at a busy city intersection.' --index indexes/nyc_dev_uniform_5s_v2/index.npz --output results/retrieval/nyc_dev_uniform_5s_v2/query_01",
+      "wall_seconds": 8.307475165929645,
+      "returncode": 0,
+      "stdout": "#1 00:07:46.558 cosine=0.341719\n#2 00:04:30.320 cosine=0.339664\n#3 00:01:06.067 cosine=0.338753\n#4 00:07:56.508 cosine=0.336080\n#5 00:03:20.237 cosine=0.333254\nSaved results to results/retrieval/nyc_dev_uniform_5s_v2/query_01; cosine scores are not probabilities.\n",
+      "stderr": "",
+      "metrics": {
+        "operation_seconds_excluding_imports": 4.4293128750287,
+        "peak_rss_bytes": 1093779456,
+        "rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; Darwin bytes, Linux KiB converted to bytes",
+        "retrieval_guards": true
+      }
+    },
+    {
+      "command": "HF_HUB_OFFLINE=1 /Users/anguscheng/Downloads/video-search-baseline/.venv/bin/python scripts/run_development_experiment.py --worker search --metrics experiments/nyc_dev_uniform_5s_v2/query_01_repeat.metrics.json --original-source '/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov' -- search --query 'Pedestrians crossing a wide crosswalk at a busy city intersection.' --index indexes/nyc_dev_uniform_5s_v2/index.npz --output results/retrieval/nyc_dev_uniform_5s_v2/query_01_repeat",
+      "wall_seconds": 7.456204416928813,
+      "returncode": 0,
+      "stdout": "#1 00:07:46.558 cosine=0.341719\n#2 00:04:30.320 cosine=0.339664\n#3 00:01:06.067 cosine=0.338753\n#4 00:07:56.508 cosine=0.336080\n#5 00:03:20.237 cosine=0.333254\nSaved results to results/retrieval/nyc_dev_uniform_5s_v2/query_01_repeat; cosine scores are not probabilities.\n",
+      "stderr": "",
+      "metrics": {
+        "operation_seconds_excluding_imports": 3.6885812500258908,
+        "peak_rss_bytes": 1258471424,
+        "rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; Darwin bytes, Linux KiB converted to bytes",
+        "retrieval_guards": true
+      }
+    },
+    {
+      "command": "HF_HUB_OFFLINE=1 /Users/anguscheng/Downloads/video-search-baseline/.venv/bin/python scripts/run_development_experiment.py --worker search --metrics experiments/nyc_dev_uniform_5s_v2/query_02.metrics.json --original-source '/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov' -- search --query 'Yellow taxis driving through an intersection.' --index indexes/nyc_dev_uniform_5s_v2/index.npz --output results/retrieval/nyc_dev_uniform_5s_v2/query_02",
+      "wall_seconds": 10.74647375009954,
+      "returncode": 0,
+      "stdout": "#1 00:01:26.102 cosine=0.309758\n#2 00:04:46.338 cosine=0.295387\n#3 00:04:50.372 cosine=0.268875\n#4 00:07:50.558 cosine=0.266762\n#5 00:01:20.102 cosine=0.259377\nSaved results to results/retrieval/nyc_dev_uniform_5s_v2/query_02; cosine scores are not probabilities.\n",
+      "stderr": "",
+      "metrics": {
+        "operation_seconds_excluding_imports": 6.734030709019862,
+        "peak_rss_bytes": 688455680,
+        "rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; Darwin bytes, Linux KiB converted to bytes",
+        "retrieval_guards": true
+      }
+    },
+    {
+      "command": "HF_HUB_OFFLINE=1 /Users/anguscheng/Downloads/video-search-baseline/.venv/bin/python scripts/run_development_experiment.py --worker search --metrics experiments/nyc_dev_uniform_5s_v2/query_02_repeat.metrics.json --original-source '/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov' -- search --query 'Yellow taxis driving through an intersection.' --index indexes/nyc_dev_uniform_5s_v2/index.npz --output results/retrieval/nyc_dev_uniform_5s_v2/query_02_repeat",
+      "wall_seconds": 11.005789708928205,
+      "returncode": 0,
+      "stdout": "#1 00:01:26.102 cosine=0.309758\n#2 00:04:46.338 cosine=0.295387\n#3 00:04:50.372 cosine=0.268875\n#4 00:07:50.558 cosine=0.266762\n#5 00:01:20.102 cosine=0.259377\nSaved results to results/retrieval/nyc_dev_uniform_5s_v2/query_02_repeat; cosine scores are not probabilities.\n",
+      "stderr": "",
+      "metrics": {
+        "operation_seconds_excluding_imports": 6.58628749998752,
+        "peak_rss_bytes": 698351616,
+        "rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; Darwin bytes, Linux KiB converted to bytes",
+        "retrieval_guards": true
+      }
+    },
+    {
+      "command": "HF_HUB_OFFLINE=1 /Users/anguscheng/Downloads/video-search-baseline/.venv/bin/python scripts/run_development_experiment.py --worker search --metrics experiments/nyc_dev_uniform_5s_v2/query_03.metrics.json --original-source '/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov' -- search --query 'A bus passing through a crowded intersection.' --index indexes/nyc_dev_uniform_5s_v2/index.npz --output results/retrieval/nyc_dev_uniform_5s_v2/query_03",
+      "wall_seconds": 31.846504042041488,
+      "returncode": 0,
+      "stdout": "#1 00:05:26.372 cosine=0.326140\n#2 00:04:56.355 cosine=0.320535\n#3 00:03:10.253 cosine=0.320178\n#4 00:05:20.372 cosine=0.318524\n#5 00:07:46.558 cosine=0.315167\nSaved results to results/retrieval/nyc_dev_uniform_5s_v2/query_03; cosine scores are not probabilities.\n",
+      "stderr": "",
+      "metrics": {
+        "operation_seconds_excluding_imports": 20.89683641702868,
+        "peak_rss_bytes": 450265088,
+        "rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; Darwin bytes, Linux KiB converted to bytes",
+        "retrieval_guards": true
+      }
+    },
+    {
+      "command": "HF_HUB_OFFLINE=1 /Users/anguscheng/Downloads/video-search-baseline/.venv/bin/python scripts/run_development_experiment.py --worker search --metrics experiments/nyc_dev_uniform_5s_v2/query_03_repeat.metrics.json --original-source '/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov' -- search --query 'A bus passing through a crowded intersection.' --index indexes/nyc_dev_uniform_5s_v2/index.npz --output results/retrieval/nyc_dev_uniform_5s_v2/query_03_repeat",
+      "wall_seconds": 12.020791292074136,
+      "returncode": 0,
+      "stdout": "#1 00:05:26.372 cosine=0.326140\n#2 00:04:56.355 cosine=0.320535\n#3 00:03:10.253 cosine=0.320178\n#4 00:05:20.372 cosine=0.318524\n#5 00:07:46.558 cosine=0.315167\nSaved results to results/retrieval/nyc_dev_uniform_5s_v2/query_03_repeat; cosine scores are not probabilities.\n",
+      "stderr": "",
+      "metrics": {
+        "operation_seconds_excluding_imports": 4.8525577910477296,
+        "peak_rss_bytes": 1040056320,
+        "rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; Darwin bytes, Linux KiB converted to bytes",
+        "retrieval_guards": true
+      }
+    }
+  ],
+  "checks": {
+    "uniform_selection_matches_independent_grid": true,
+    "finite_unit_embeddings": true,
+    "fresh_process_queries_repeat_identically": true,
+    "original_not_accessed_no_reencoding_no_image_embedding_recompute": true,
+    "independent_cosine_and_rankings": true,
+    "all_preview_jpegs_match_cropped_frame": true,
+    "retrieval_source_times_match_export_csv": true,
+    "index_unchanged": true
+  },
+  "dataset_manifest": "data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.dataset.json",
+  "index_metadata": {
+    "schema_version": 1,
+    "source": {
+      "path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.mp4",
+      "sha256": "a4bc3de1c8811d562ae052c15e5a4895afa86403459d6e3713d26cfc2602d4e4",
+      "fps": 1.4079096800053443,
+      "reported_frame_count": 843,
+      "duration_seconds": 598.76,
+      "duration_method": "reported frame count / average FPS; estimate for VFR",
+      "width": 592,
+      "height": 356,
+      "bytes": 18497430,
+      "decoded_frames": 843,
+      "last_frame_seconds": 596.793333,
+      "timestamps": "OpenCV FFmpeg CAP_PROP_POS_MSEC; seconds"
+    },
+    "sampler": {
+      "name": "uniform",
+      "interval_seconds": 5.0,
+      "max_frames": null
+    },
+    "encoder": {
+      "model": "ViT-B-32",
+      "pretrained": "laion2b_s34b_b79k",
+      "weights_sha256": "e3267697543bbe2b3a7bd68f10d1b683ad822a7ad6088f45c32ea33b3c18cc58",
+      "precision": "fp32",
+      "device": "cpu",
+      "seed": 0,
+      "threads": 4
+    },
+    "preprocess": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711))\n)",
+    "environment": {
+      "python": "3.11.7",
+      "platform": "macOS-26.5.2-arm64-arm-64bit",
+      "packages": {
+        "numpy": "2.4.6",
+        "opencv-python": "5.0.0.93",
+        "Pillow": "13.0.0",
+        "torch": "2.14.1",
+        "torchvision": "0.29.1",
+        "open_clip_torch": "3.3.0",
+        "timm": "1.0.30"
+      }
+    },
+    "batch_size": 16,
+    "frames": 120,
+    "embedding_dimension": 512,
+    "embedding_dtype": "float32",
+    "storage": {
+      "embedding_bytes": 245760,
+      "timestamp_bytes": 960,
+      "frame_number_bytes": 960,
+      "payload_bytes": 248640,
+      "format": "uncompressed NPZ; embedded JSON metadata",
+      "source_timestamp_bytes": 960
+    },
+    "dataset": {
+      "schema_version": 1,
+      "dataset_id": "nyc_traffic_dev_000500_001500_v1",
+      "camera_id": "broadway_46st_quad_south",
+      "camera_description": "Broadway @ 46 St - Quad South",
+      "source_recording": {
+        "id": "nyc_traffic",
+        "path": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+        "size_bytes": 5649293214,
+        "mtime_ns": 1793413639635746677,
+        "sampled_sha256": "d107e3b7cdbba5e2b9aaf477f809107026e61a7b3ae6a2c47aba85a43828e366",
+        "metadata": {
+          "width": 2436,
+          "height": 1568,
+          "video_start_seconds": 0.0,
+          "video_end_seconds": 20432.595,
+          "video_duration_seconds": 20432.595,
+          "format_start_time": 0.0,
+          "stream_start_time": 0.0,
+          "avg_frame_rate": "5767000/4086519",
+          "time_base": "1/600",
+          "codec": "h264",
+          "pixel_format": "yuv420p",
+          "duration_basis": "video stream metadata",
+          "ffprobe": {
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "codec_tag": "0x31637661",
+                "mime_codec_string": "avc1.4d0033",
+                "width": 2436,
+                "height": 1568,
+                "coded_width": 2436,
+                "coded_height": 1568,
+                "has_b_frames": 2,
+                "pix_fmt": "yuv420p",
+                "level": 51,
+                "color_range": "tv",
+                "color_space": "bt709",
+                "color_transfer": "bt709",
+                "color_primaries": "bt709",
+                "chroma_location": "left",
+                "field_order": "progressive",
+                "is_avc": "true",
+                "nal_length_size": "4",
+                "id": "0x1",
+                "r_frame_rate": "60/1",
+                "avg_frame_rate": "5767000/4086519",
+                "time_base": "1/600",
+                "start_pts": 0,
+                "start_time": "0.000000",
+                "duration_ts": 12259557,
+                "duration": "20432.595000",
+                "bit_rate": "2211520",
+                "bits_per_raw_sample": "8",
+                "nb_frames": "28835",
+                "extradata_size": 31,
+                "disposition": {
+                  "default": 1,
+                  "dub": 0,
+                  "original": 0,
+                  "comment": 0,
+                  "lyrics": 0,
+                  "karaoke": 0,
+                  "forced": 0,
+                  "hearing_impaired": 0,
+                  "visual_impaired": 0,
+                  "clean_effects": 0,
+                  "attached_pic": 0,
+                  "timed_thumbnails": 0,
+                  "non_diegetic": 0,
+                  "captions": 0,
+                  "descriptions": 0,
+                  "metadata": 0,
+                  "dependent": 0,
+                  "still_image": 0,
+                  "multilayer": 0
+                },
+                "tags": {
+                  "creation_time": "2026-10-30T20:46:47.000000Z",
+                  "language": "und",
+                  "handler_name": "Core Media Video",
+                  "vendor_id": "[0][0][0][0]",
+                  "encoder": "H.264"
+                }
+              }
+            ],
+            "format": {
+              "filename": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+              "nb_streams": 1,
+              "nb_programs": 0,
+              "nb_stream_groups": 0,
+              "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+              "format_long_name": "QuickTime / MOV",
+              "start_time": "0.000000",
+              "duration": "20432.595000",
+              "size": "5649293214",
+              "bit_rate": "2211874",
+              "probe_score": 100,
+              "tags": {
+                "major_brand": "qt  ",
+                "minor_version": "0",
+                "compatible_brands": "qt  ",
+                "creation_time": "2026-10-30T20:46:47.000000Z",
+                "com.apple.quicktime.author": "ReplayKitRecording",
+                "com.apple.quicktime.full-frame-rate-playback-intent": "1"
+              }
+            }
+          }
+        }
+      },
+      "video": {
+        "path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.mp4",
+        "sha256": "a4bc3de1c8811d562ae052c15e5a4895afa86403459d6e3713d26cfc2602d4e4",
+        "metadata": {
+          "width": 592,
+          "height": 356,
+          "video_start_seconds": 0.0,
+          "video_end_seconds": 598.76,
+          "video_duration_seconds": 598.76,
+          "format_start_time": 0.0,
+          "stream_start_time": 0.0,
+          "avg_frame_rate": "21075/14969",
+          "time_base": "1/1000000",
+          "codec": "h264",
+          "pixel_format": "yuv420p",
+          "duration_basis": "video stream metadata",
+          "ffprobe": {
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "codec_tag": "0x31637661",
+                "mime_codec_string": "avc1.64001f",
+                "width": 592,
+                "height": 356,
+                "coded_width": 592,
+                "coded_height": 356,
+                "has_b_frames": 0,
+                "pix_fmt": "yuv420p",
+                "level": 31,
+                "color_range": "tv",
+                "color_space": "bt709",
+                "color_transfer": "bt709",
+                "color_primaries": "bt709",
+                "chroma_location": "left",
+                "field_order": "progressive",
+                "is_avc": "true",
+                "nal_length_size": "4",
+                "id": "0x1",
+                "r_frame_rate": "60/1",
+                "avg_frame_rate": "21075/14969",
+                "time_base": "1/1000000",
+                "start_pts": 0,
+                "start_time": "0.000000",
+                "duration_ts": 598760000,
+                "duration": "598.760000",
+                "bit_rate": "246995",
+                "bits_per_raw_sample": "8",
+                "nb_frames": "843",
+                "extradata_size": 49,
+                "disposition": {
+                  "default": 1,
+                  "dub": 0,
+                  "original": 0,
+                  "comment": 0,
+                  "lyrics": 0,
+                  "karaoke": 0,
+                  "forced": 0,
+                  "hearing_impaired": 0,
+                  "visual_impaired": 0,
+                  "clean_effects": 0,
+                  "attached_pic": 0,
+                  "timed_thumbnails": 0,
+                  "non_diegetic": 0,
+                  "captions": 0,
+                  "descriptions": 0,
+                  "metadata": 0,
+                  "dependent": 0,
+                  "still_image": 0,
+                  "multilayer": 0
+                },
+                "tags": {
+                  "language": "und",
+                  "handler_name": "Core Media Video",
+                  "encoder": "Lavc63.1.102 libx264"
+                }
+              }
+            ],
+            "format": {
+              "filename": "data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.mp4",
+              "nb_streams": 1,
+              "nb_programs": 0,
+              "nb_stream_groups": 0,
+              "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+              "format_long_name": "QuickTime / MOV",
+              "start_time": "0.000000",
+              "duration": "598.760000",
+              "size": "18497430",
+              "bit_rate": "247143",
+              "probe_score": 100,
+              "tags": {
+                "major_brand": "isom",
+                "minor_version": "512",
+                "compatible_brands": "isomiso2avc1mp41",
+                "encoder": "Lavf63.1.102"
+              }
+            }
+          }
+        }
+      },
+      "timestamp_mapping": {
+        "path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.timeline.csv",
+        "sha256": "7929c727106d5d0062de45420c47179e1439c113e5e5dfcdebdb50d4f730ae60"
+      },
+      "availability_report": {
+        "path": "/Users/anguscheng/Downloads/video-search-baseline/data/metadata/nyc_traffic/availability_v1/availability.json",
+        "sha256": "52a10e9ba01b4176132e36ce8aaad783c22f677dd30af4bbe7541404e0335b15"
+      },
+      "availability_policy": "exclude_confirmed_unavailable_only",
+      "valid_source_intervals": [
+        [
+          0.0,
+          20432.595
+        ]
+      ],
+      "uncertain_source_intervals": [],
+      "confirmed_unavailable_intervals": [],
+      "requested_source_interval": [
+        300.0,
+        900.0
+      ],
+      "first_retained_source_seconds": 301.73833333333334,
+      "last_retained_source_seconds": 898.5316666666666,
+      "crop": [
+        116,
+        696,
+        592,
+        356
+      ],
+      "preprocessing": {
+        "encoding": {
+          "crf": 18,
+          "preset": "medium",
+          "threads": 4
+        },
+        "no_autorotate": true,
+        "temporal_resampling": false,
+        "boundary_policy": "Keep decoded PTS in [start,end); rebase first retained frame to zero. No boundary padding or FPS conversion. Sparse VFR means playable length may be shorter than requested interval.",
+        "config_path": "/Users/anguscheng/Downloads/video-search-baseline/configs/nyc_traffic.json",
+        "config_sha256": "a32b3e5fd6708fbd0901877502837013f591f06039bc861b653a0479286f6d03",
+        "export_manifest_path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/manifest.json",
+        "export_manifest_sha256": "bcd6f8e41d3ec7fed37ab4965cb04bb6acee6bcdc21ba0f72442bb885ccea231"
+      },
+      "manifest_path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.dataset.json",
+      "manifest_sha256": "a75c96f48f719a850b334499839402aaef1c723d72f4234e3f889e8d589188c9"
+    },
+    "eligibility": {
+      "uniform_candidates": 120,
+      "excluded_candidates": 0,
+      "rule": "Apply shared source-time eligibility mask after unchanged uniform selection"
+    },
+    "indexing_seconds_before_persistence": 19.158268375089392,
+    "index_file_bytes": 285134,
+    "index_sha256": "02dc1dd92d03775b6710b749384f5ebd6aaa523ecbe8b7c497919aa557166774",
+    "indexing_seconds": 19.17408966703806,
+    "model_load_seconds": 6.4637844590470195,
+    "model_and_index_seconds": 25.64144970907364
+  },
+  "index_sha256": "02dc1dd92d03775b6710b749384f5ebd6aaa523ecbe8b7c497919aa557166774",
+  "maximum_cosine_error": 6.11117758064772e-08,
+  "retrieval_results": [
+    {
+      "query": "Pedestrians crossing a wide crosswalk at a busy city intersection.",
+      "top_k": 5,
+      "index": "/Users/anguscheng/Downloads/video-search-baseline/indexes/nyc_dev_uniform_5s_v2/index.npz",
+      "index_sha256": "02dc1dd92d03775b6710b749384f5ebd6aaa523ecbe8b7c497919aa557166774",
+      "encoder": {
+        "model": "ViT-B-32",
+        "pretrained": "laion2b_s34b_b79k",
+        "weights_sha256": "e3267697543bbe2b3a7bd68f10d1b683ad822a7ad6088f45c32ea33b3c18cc58",
+        "precision": "fp32",
+        "device": "cpu",
+        "seed": 0,
+        "threads": 4
+      },
+      "previews": true,
+      "results": [
+        {
+          "rank": 1,
+          "frame_number": 658,
+          "seconds": 466.558333,
+          "cosine_similarity": 0.3417186439037323,
+          "source_seconds": 768.296666666667,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:07:46.558",
+          "image": "rank_01_frame_00000658.jpg"
+        },
+        {
+          "rank": 2,
+          "frame_number": 390,
+          "seconds": 270.32,
+          "cosine_similarity": 0.33966368436813354,
+          "source_seconds": 572.058333333333,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:04:30.320",
+          "image": "rank_02_frame_00000390.jpg"
+        },
+        {
+          "rank": 3,
+          "frame_number": 103,
+          "seconds": 66.066667,
+          "cosine_similarity": 0.33875250816345215,
+          "source_seconds": 367.805,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:01:06.067",
+          "image": "rank_03_frame_00000103.jpg"
+        },
+        {
+          "rank": 4,
+          "frame_number": 674,
+          "seconds": 476.508333,
+          "cosine_similarity": 0.33607983589172363,
+          "source_seconds": 778.246666666667,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:07:56.508",
+          "image": "rank_04_frame_00000674.jpg"
+        },
+        {
+          "rank": 5,
+          "frame_number": 296,
+          "seconds": 200.23666699999998,
+          "cosine_similarity": 0.3332540690898895,
+          "source_seconds": 501.975,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:03:20.237",
+          "image": "rank_05_frame_00000296.jpg"
+        }
+      ]
+    },
+    {
+      "query": "Yellow taxis driving through an intersection.",
+      "top_k": 5,
+      "index": "/Users/anguscheng/Downloads/video-search-baseline/indexes/nyc_dev_uniform_5s_v2/index.npz",
+      "index_sha256": "02dc1dd92d03775b6710b749384f5ebd6aaa523ecbe8b7c497919aa557166774",
+      "encoder": {
+        "model": "ViT-B-32",
+        "pretrained": "laion2b_s34b_b79k",
+        "weights_sha256": "e3267697543bbe2b3a7bd68f10d1b683ad822a7ad6088f45c32ea33b3c18cc58",
+        "precision": "fp32",
+        "device": "cpu",
+        "seed": 0,
+        "threads": 4
+      },
+      "previews": true,
+      "results": [
+        {
+          "rank": 1,
+          "frame_number": 131,
+          "seconds": 86.10166699999999,
+          "cosine_similarity": 0.3097577691078186,
+          "source_seconds": 387.84,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:01:26.102",
+          "image": "rank_01_frame_00000131.jpg"
+        },
+        {
+          "rank": 2,
+          "frame_number": 414,
+          "seconds": 286.338333,
+          "cosine_similarity": 0.29538723826408386,
+          "source_seconds": 588.076666666667,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:04:46.338",
+          "image": "rank_02_frame_00000414.jpg"
+        },
+        {
+          "rank": 3,
+          "frame_number": 419,
+          "seconds": 290.371667,
+          "cosine_similarity": 0.26887473464012146,
+          "source_seconds": 592.11,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:04:50.372",
+          "image": "rank_03_frame_00000419.jpg"
+        },
+        {
+          "rank": 4,
+          "frame_number": 665,
+          "seconds": 470.558333,
+          "cosine_similarity": 0.26676198840141296,
+          "source_seconds": 772.296666666667,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:07:50.558",
+          "image": "rank_04_frame_00000665.jpg"
+        },
+        {
+          "rank": 5,
+          "frame_number": 122,
+          "seconds": 80.10166699999999,
+          "cosine_similarity": 0.2593767046928406,
+          "source_seconds": 381.84,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:01:20.102",
+          "image": "rank_05_frame_00000122.jpg"
+        }
+      ]
+    },
+    {
+      "query": "A bus passing through a crowded intersection.",
+      "top_k": 5,
+      "index": "/Users/anguscheng/Downloads/video-search-baseline/indexes/nyc_dev_uniform_5s_v2/index.npz",
+      "index_sha256": "02dc1dd92d03775b6710b749384f5ebd6aaa523ecbe8b7c497919aa557166774",
+      "encoder": {
+        "model": "ViT-B-32",
+        "pretrained": "laion2b_s34b_b79k",
+        "weights_sha256": "e3267697543bbe2b3a7bd68f10d1b683ad822a7ad6088f45c32ea33b3c18cc58",
+        "precision": "fp32",
+        "device": "cpu",
+        "seed": 0,
+        "threads": 4
+      },
+      "previews": true,
+      "results": [
+        {
+          "rank": 1,
+          "frame_number": 467,
+          "seconds": 326.371667,
+          "cosine_similarity": 0.326139897108078,
+          "source_seconds": 628.11,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:05:26.372",
+          "image": "rank_01_frame_00000467.jpg"
+        },
+        {
+          "rank": 2,
+          "frame_number": 429,
+          "seconds": 296.35499999999996,
+          "cosine_similarity": 0.3205345869064331,
+          "source_seconds": 598.093333333333,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:04:56.355",
+          "image": "rank_02_frame_00000429.jpg"
+        },
+        {
+          "rank": 3,
+          "frame_number": 278,
+          "seconds": 190.253333,
+          "cosine_similarity": 0.3201776146888733,
+          "source_seconds": 491.991666666667,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:03:10.253",
+          "image": "rank_03_frame_00000278.jpg"
+        },
+        {
+          "rank": 4,
+          "frame_number": 459,
+          "seconds": 320.371667,
+          "cosine_similarity": 0.3185243606567383,
+          "source_seconds": 622.11,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:05:20.372",
+          "image": "rank_04_frame_00000459.jpg"
+        },
+        {
+          "rank": 5,
+          "frame_number": 658,
+          "seconds": 466.558333,
+          "cosine_similarity": 0.31516703963279724,
+          "source_seconds": 768.296666666667,
+          "camera_id": "broadway_46st_quad_south",
+          "timestamp": "00:07:46.558",
+          "image": "rank_05_frame_00000658.jpg"
+        }
+      ]
+    }
+  ],
+  "performance": {
+    "indexing_fresh_process_seconds": 35.92960320902057,
+    "index_peak_rss_bytes": 648298496,
+    "query_fresh_process_seconds": [
+      8.307475165929645,
+      10.74647375009954,
+      31.846504042041488
+    ],
+    "average_query_fresh_process_seconds": 16.966817652690224,
+    "query_peak_rss_bytes": [
+      1093779456,
+      1258471424,
+      688455680,
+      698351616,
+      450265088,
+      1040056320
+    ],
+    "index_bytes": 285134,
+    "frames": 120,
+    "embedding_dimension": 512,
+    "numeric_payload_bytes": 248640,
+    "conditions": "CPU, 4 Torch threads, fp32, seed0, batch16, 5s uniform, cached weights, offline; fresh-query times include imports/model loading/cropped-preview decoding/JPEG/CSV/JSON writes. Original grid is inaccessible during retrieval."
+  },
+  "passed": true
+}

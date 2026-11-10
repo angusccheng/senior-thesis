@@ -1,0 +1,10 @@
+usage: prepare_data.py [-h] {init,preview,export,diagnose} ...
+
+Reproducible FFmpeg traffic-grid preprocessing
+
+positional arguments:
+  {init,preview,export,diagnose}
+    init                Probe source and create editable camera configuration
+
+options:
+  -h, --help            show this help message and exit

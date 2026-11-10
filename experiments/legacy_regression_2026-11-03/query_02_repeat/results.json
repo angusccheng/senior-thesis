@@ -1,0 +1,58 @@
+{
+  "query": "a park with green trees and a walking path",
+  "top_k": 5,
+  "index": "/Users/anguscheng/Downloads/video-search-baseline/experiments/legacy_regression_2026-11-03/index.npz",
+  "index_sha256": "8cc2da50b1383f7d9531f88f37f5bed6e6d7fca773bbde25cf67aded779bd666",
+  "encoder": {
+    "model": "ViT-B-32",
+    "pretrained": "laion2b_s34b_b79k",
+    "weights_sha256": "e3267697543bbe2b3a7bd68f10d1b683ad822a7ad6088f45c32ea33b3c18cc58",
+    "precision": "fp32",
+    "device": "cpu",
+    "seed": 0,
+    "threads": 4
+  },
+  "previews": true,
+  "results": [
+    {
+      "rank": 1,
+      "frame_number": 60,
+      "seconds": 2.0,
+      "cosine_similarity": 0.30682826042175293,
+      "timestamp": "00:00:02.000",
+      "image": "rank_01_frame_00000060.jpg"
+    },
+    {
+      "rank": 2,
+      "frame_number": 0,
+      "seconds": 0.0,
+      "cosine_similarity": 0.30554407835006714,
+      "timestamp": "00:00:00.000",
+      "image": "rank_02_frame_00000000.jpg"
+    },
+    {
+      "rank": 3,
+      "frame_number": 30,
+      "seconds": 1.0,
+      "cosine_similarity": 0.30486035346984863,
+      "timestamp": "00:00:01.000",
+      "image": "rank_03_frame_00000030.jpg"
+    },
+    {
+      "rank": 4,
+      "frame_number": 120,
+      "seconds": 4.0,
+      "cosine_similarity": 0.30427783727645874,
+      "timestamp": "00:00:04.000",
+      "image": "rank_04_frame_00000120.jpg"
+    },
+    {
+      "rank": 5,
+      "frame_number": 150,
+      "seconds": 5.0,
+      "cosine_similarity": 0.30019789934158325,
+      "timestamp": "00:00:05.000",
+      "image": "rank_05_frame_00000150.jpg"
+    }
+  ]
+}

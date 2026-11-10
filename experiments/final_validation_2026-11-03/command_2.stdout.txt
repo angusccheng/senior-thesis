@@ -1,0 +1,11 @@
+usage: main.py [-h] {index,search} ...
+
+Modular natural-language frame retrieval
+
+positional arguments:
+  {index,search}
+    index         Select frames and build an index
+    search        Search an existing index
+
+options:
+  -h, --help      show this help message and exit

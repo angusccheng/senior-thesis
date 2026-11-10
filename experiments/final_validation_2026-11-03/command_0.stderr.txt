@@ -1,0 +1,25 @@
+test_explicit_service_card_is_unavailable (test_availability.AvailabilityTests.test_explicit_service_card_is_unavailable) ... ok
+test_invalid_eligibility_intervals (test_availability.AvailabilityTests.test_invalid_eligibility_intervals) ... ok
+test_only_reviewed_black_is_excluded (test_availability.AvailabilityTests.test_only_reviewed_black_is_excluded) ... ok
+test_run_boundaries_and_complement (test_availability.AvailabilityTests.test_run_boundaries_and_complement) ... ok
+test_budget_covers_full_timeline (test_baseline.BaselineTests.test_budget_covers_full_timeline) ... ok
+test_cosine_ranking_and_stable_ties (test_baseline.BaselineTests.test_cosine_ranking_and_stable_ties) ... ok
+test_dataset_eligibility_and_original_timestamps (test_baseline.BaselineTests.test_dataset_eligibility_and_original_timestamps) ... ok
+test_decoded_timestamps_and_exact_selection (test_baseline.BaselineTests.test_decoded_timestamps_and_exact_selection) ... ok
+test_index_search_and_previews (test_baseline.BaselineTests.test_index_search_and_previews) ... ok
+test_invalid_sampler_settings (test_baseline.BaselineTests.test_invalid_sampler_settings) ... ok
+test_invalid_video_and_index (test_baseline.BaselineTests.test_invalid_video_and_index) ... [mov,mp4,m4a,3gp,3g2,mj2 @ 0xa3f408000] moov atom not found
+[ WARN:0@0.179] global cap.cpp:214 open VIDEOIO(FFMPEG): backend is generally available but can't be used to capture by name
+ok
+test_variable_timestamp_grid (test_baseline.BaselineTests.test_variable_timestamp_grid) ... ok
+test_config_and_input_validation (test_preprocessing.PreprocessingTests.test_config_and_input_validation) ... ok
+test_effective_update_frequency_and_blackout (test_preprocessing.PreprocessingTests.test_effective_update_frequency_and_blackout) ... ok
+test_fractional_clip_crop_and_timestamps (test_preprocessing.PreprocessingTests.test_fractional_clip_crop_and_timestamps) ... ok
+test_full_mode_on_tiny_source_and_dry_run (test_preprocessing.PreprocessingTests.test_full_mode_on_tiny_source_and_dry_run) ... ok
+test_showinfo_uses_integer_pts_not_rounded_time (test_preprocessing.PreprocessingTests.test_showinfo_uses_integer_pts_not_rounded_time) ... ok
+test_window_and_full_export_gate (test_preprocessing.PreprocessingTests.test_window_and_full_export_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.859s
+
+OK

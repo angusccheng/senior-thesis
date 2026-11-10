@@ -1,0 +1,1121 @@
+{
+  "user_approved": true,
+  "records": [
+    {
+      "action": "snapshot",
+      "old": "prepare_data.py",
+      "new": "archive/pre_cleanup_2026-11-03/prepare_data.py",
+      "sha256": "04d993ddd7243f31bc8e878ec9662daabfa19d50b488c963a3d4ee03c3231e3a"
+    },
+    {
+      "action": "snapshot",
+      "old": "encoder.py",
+      "new": "archive/pre_cleanup_2026-11-03/encoder.py",
+      "sha256": "02d96109026163474c2dd001148bb83a3904719fb45c7799cf2143add62a0a20"
+    },
+    {
+      "action": "snapshot",
+      "old": "preprocessing.py",
+      "new": "archive/pre_cleanup_2026-11-03/preprocessing.py",
+      "sha256": "38d72cd326f0790e410083578c58d868312f5f311e21536e80d6577f1c87ef8d"
+    },
+    {
+      "action": "snapshot",
+      "old": "pipeline.py",
+      "new": "archive/pre_cleanup_2026-11-03/pipeline.py",
+      "sha256": "66e3d397633f8429c37c3041c2b908eb0a07793f669cd0d460f8e795d009a69c"
+    },
+    {
+      "action": "snapshot",
+      "old": "main.py",
+      "new": "archive/pre_cleanup_2026-11-03/main.py",
+      "sha256": "bde292b4b2030fef90973acfd03a57fe114a459b9482739a74d76467a7ce5de0"
+    },
+    {
+      "action": "snapshot",
+      "old": "video.py",
+      "new": "archive/pre_cleanup_2026-11-03/video.py",
+      "sha256": "ffb71542052a7e6b791425be7b63f9fec822b6e091ff643f27d2e2f4854e2d30"
+    },
+    {
+      "action": "snapshot",
+      "old": "samplers.py",
+      "new": "archive/pre_cleanup_2026-11-03/samplers.py",
+      "sha256": "259e7e72142cc69bf461450e37658a9d8200aeb65b40ae717d8399fbf1f8d2c4"
+    },
+    {
+      "action": "snapshot",
+      "old": "baseline_verification.md",
+      "new": "archive/pre_cleanup_2026-11-03/baseline_verification.md",
+      "sha256": "31664aad005e43051054bddb09130d5155462bf1555c02595d35cb659bda68ba"
+    },
+    {
+      "action": "snapshot",
+      "old": "DATA_PREPARATION.md",
+      "new": "archive/pre_cleanup_2026-11-03/DATA_PREPARATION.md",
+      "sha256": "d6fd6431f4d1f7bc1f469be64cb9f8cd43f53d7b38b8a6d9254ccab940796dce"
+    },
+    {
+      "action": "snapshot",
+      "old": "README.md",
+      "new": "archive/pre_cleanup_2026-11-03/README.md",
+      "sha256": "5349f39a37eadbad322cfce95fe727363101b24469658b99273731b3d68d6246"
+    },
+    {
+      "action": "snapshot",
+      "old": ".gitignore",
+      "new": "archive/pre_cleanup_2026-11-03/.gitignore",
+      "sha256": "9737d62189c96eeea1ff26da01f22627269760ee3b02664ea13554940ae08208"
+    },
+    {
+      "action": "snapshot",
+      "old": "configs/nyc_traffic.json",
+      "new": "archive/pre_cleanup_2026-11-03/configs/nyc_traffic.json",
+      "sha256": "f5290dae0c81fc2b649bc560331daf2bb76e7934888544e671d935eb259c14a4"
+    },
+    {
+      "action": "snapshot",
+      "old": "scripts/render_verification_report.py",
+      "new": "archive/pre_cleanup_2026-11-03/scripts/render_verification_report.py",
+      "sha256": "233fe334416cc72fcdddd96d6ba7f6c7d66c920cd7ce6dc02a434fda32dce0e0"
+    },
+    {
+      "action": "snapshot",
+      "old": "scripts/verify_preprocessing_samples.py",
+      "new": "archive/pre_cleanup_2026-11-03/scripts/verify_preprocessing_samples.py",
+      "sha256": "f337b7b9fc282e9cefc11a0cddc237d8ba038c13ec4653788730ed68b7e66cf3"
+    },
+    {
+      "action": "snapshot",
+      "old": "scripts/download_sample.py",
+      "new": "archive/pre_cleanup_2026-11-03/scripts/download_sample.py",
+      "sha256": "dbeafef324e79772ec7ff08fd2663aeafa34c89c0f682e6f7ea5f14228ecd5eb"
+    },
+    {
+      "action": "snapshot",
+      "old": "scripts/verify_baseline.py",
+      "new": "archive/pre_cleanup_2026-11-03/scripts/verify_baseline.py",
+      "sha256": "29bdab108fc1ec1fbb2dd6dc47afa1f84e7230275f7d3d3765011971c88414f7"
+    },
+    {
+      "action": "snapshot",
+      "old": "tests/test_baseline.py",
+      "new": "archive/pre_cleanup_2026-11-03/tests/test_baseline.py",
+      "sha256": "215df9077cbae92c6e2d2cea88f9ac26c9bebdd9814555fa5cb0f9806a73ba67"
+    },
+    {
+      "action": "snapshot",
+      "old": "tests/test_preprocessing.py",
+      "new": "archive/pre_cleanup_2026-11-03/tests/test_preprocessing.py",
+      "sha256": "7ea422e735db61a9b565a095d1599807649eafd0fd2fec7f9b521aabc4a5db77"
+    },
+    {
+      "action": "move",
+      "old": "encoder.py",
+      "new": "video_search/encoder.py",
+      "sha256_before": "02d96109026163474c2dd001148bb83a3904719fb45c7799cf2143add62a0a20",
+      "sha256_after": "02d96109026163474c2dd001148bb83a3904719fb45c7799cf2143add62a0a20"
+    },
+    {
+      "action": "move",
+      "old": "pipeline.py",
+      "new": "video_search/pipeline.py",
+      "sha256_before": "66e3d397633f8429c37c3041c2b908eb0a07793f669cd0d460f8e795d009a69c",
+      "sha256_after": "59094e80714a5bf2ce58caf5395dec1b0c41cc512a23ad9452ba0f34e98c8715"
+    },
+    {
+      "action": "move",
+      "old": "samplers.py",
+      "new": "video_search/samplers.py",
+      "sha256_before": "259e7e72142cc69bf461450e37658a9d8200aeb65b40ae717d8399fbf1f8d2c4",
+      "sha256_after": "4cd5fc2ec36016d98277c6eeca754cef05a8142af50b91225a60b713e9dca826"
+    },
+    {
+      "action": "move",
+      "old": "video.py",
+      "new": "video_search/video.py",
+      "sha256_before": "ffb71542052a7e6b791425be7b63f9fec822b6e091ff643f27d2e2f4854e2d30",
+      "sha256_after": "ffb71542052a7e6b791425be7b63f9fec822b6e091ff643f27d2e2f4854e2d30"
+    },
+    {
+      "action": "move",
+      "old": "preprocessing.py",
+      "new": "video_search/preprocessing.py",
+      "sha256_before": "38d72cd326f0790e410083578c58d868312f5f311e21536e80d6577f1c87ef8d",
+      "sha256_after": "65e44df388a5e856c79a9a1d40d373dad11ec63a131f2ad7bbab5f24d5c552d2"
+    },
+    {
+      "action": "move",
+      "old": "DATA_PREPARATION.md",
+      "new": "docs/DATA_PREPARATION.md",
+      "sha256_before": "d6fd6431f4d1f7bc1f469be64cb9f8cd43f53d7b38b8a6d9254ccab940796dce",
+      "sha256_after": "8ba39ae6d22049c1f1657057452ff3da27ada1498da820e7630775045c173d01"
+    },
+    {
+      "action": "move",
+      "old": "baseline_verification.md",
+      "new": "docs/baseline_verification.md",
+      "sha256_before": "31664aad005e43051054bddb09130d5155462bf1555c02595d35cb659bda68ba",
+      "sha256_after": "eb778162bf330029830c218d572041a60f84df06eae8114d280ab9fad57a5073"
+    },
+    {
+      "action": "archive_with_compatibility_link",
+      "old": "output",
+      "new": "archive/legacy_output",
+      "files": 150
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "__pycache__/main.cpython-313.pyc",
+      "bytes": 7631
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "__pycache__/samplers.cpython-311.pyc",
+      "bytes": 3321
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "__pycache__/main.cpython-311.pyc",
+      "bytes": 8629
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "__pycache__/encoder.cpython-313.pyc",
+      "bytes": 2039
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "__pycache__/encoder.cpython-311.pyc",
+      "bytes": 6195
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "__pycache__/pipeline.cpython-311.pyc",
+      "bytes": 16215
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "__pycache__/prepare_data.cpython-311.pyc",
+      "bytes": 6711
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "__pycache__/preprocessing.cpython-311.pyc",
+      "bytes": 44325
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "__pycache__/video.cpython-313.pyc",
+      "bytes": 1873
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "__pycache__/video.cpython-311.pyc",
+      "bytes": 6542
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "scripts/__pycache__/download_sample.cpython-311.pyc",
+      "bytes": 2061
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "scripts/__pycache__/verify_baseline.cpython-311.pyc",
+      "bytes": 26386
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "scripts/__pycache__/verify_preprocessing_samples.cpython-311.pyc",
+      "bytes": 8474
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "scripts/__pycache__/render_verification_report.cpython-311.pyc",
+      "bytes": 19617
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "tests/__pycache__/test_preprocessing.cpython-311.pyc",
+      "bytes": 15731
+    },
+    {
+      "action": "remove_approved_bytecode",
+      "path": "tests/__pycache__/test_baseline.cpython-311.pyc",
+      "bytes": 17714
+    },
+    {
+      "action": "remove_approved_finder_metadata",
+      "path": ".DS_Store",
+      "bytes": 6148
+    }
+  ],
+  "legacy_files_preserved": [
+    {
+      "path": "output/nyc_traffic/crop_review_30s/5ave_34st.png",
+      "bytes": 314293,
+      "sha256": "bab50b386eb7f22547198f94cd628a644cbe1c04f2f0b1c0caa1f2795026f310"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_30s/5ave_57st.png",
+      "bytes": 276126,
+      "sha256": "f555c6b556dc2ceb5d45a1538d63712e2210168b54c4ff2569905f4b76be5fa2"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_30s/7ave_43st_ptz.png",
+      "bytes": 8489,
+      "sha256": "0e80d115865568a76acdda890bbd0ea75ab238c355fc5da023216c293ffea4b4"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_30s/broadway_43st.png",
+      "bytes": 348249,
+      "sha256": "6be1817e3ddb81deebb6546bd828d87006abbdacf911683268d6f38a9ccc4175"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_30s/broadway_46st_quad_south.png",
+      "bytes": 328179,
+      "sha256": "3dc275bdbff72f6138398da98ce31ae3a123aa2cd34847bbd5e1bec51dba9109"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_30s/central_park_72nd_post37.png",
+      "bytes": 277790,
+      "sha256": "ba59de13af4373595c529c2969663f4c91ad14042e69e6590ce5d39fc0ee7426"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_30s/central_park_west_72st.png",
+      "bytes": 342875,
+      "sha256": "4f0d76e7e447c6e39a1164add094c53003f269e1081e9340eb60bbd70792e9a2"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_30s/coordinates.png",
+      "bytes": 2155922,
+      "sha256": "cc5e9d4d7a7a26e5729281218571989dad168ce2e8ed37efcd483e0c1301f04f"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_30s/preview.json",
+      "bytes": 7263,
+      "sha256": "2ec1ce92f2a33760fc4bbd16d386f42bd6c5cbbbc1e6579ff36f739f3f40ffe7"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_30s/source.png",
+      "bytes": 2189120,
+      "sha256": "d176f51bfc7c298446066a037175fafe67a6669424857cc712c9c40e2bb69311"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_4h/5ave_34st.png",
+      "bytes": 313942,
+      "sha256": "2b0aa0881f0c2188d6d866b2ed6ae5f06811dcfb6de269b82c24cf308fce4195"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_4h/5ave_57st.png",
+      "bytes": 8797,
+      "sha256": "54c2ae6da7d0b9744b55e06cb01efedd08fe4fe51de6bee246f88c7314ac7c80"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_4h/7ave_43st_ptz.png",
+      "bytes": 8546,
+      "sha256": "fc34ea220d43bac2aee82c67fe3160868cfc0ad98c78e60ab4277b41e1a808f2"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_4h/broadway_43st.png",
+      "bytes": 318815,
+      "sha256": "099bc63ee1b28dd4a1ea190b30c5c25c8cb79aa8b4e186c739eafba528a71868"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_4h/broadway_46st_quad_south.png",
+      "bytes": 320691,
+      "sha256": "80a212855338badfecf6f21682b306501d22001013c3ffbe27841db3a3f0d32d"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_4h/central_park_72nd_post37.png",
+      "bytes": 120561,
+      "sha256": "7eb326aa2ec624f5d6f0d7bb1c26dfa689038f6b60342c41ac098adab35ef7df"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_4h/central_park_west_72st.png",
+      "bytes": 299446,
+      "sha256": "9607640883bd91c6e5e7de24348716301806a040e7bb353f4f6a3adef19e075d"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_4h/coordinates.png",
+      "bytes": 1639137,
+      "sha256": "63bac11257159736d5ff6b580280f09627ce6f764c98deb2e259ef02bcfe6571"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_4h/preview.json",
+      "bytes": 7269,
+      "sha256": "dff21353dd4ff82ad833b9f4377ca2351b6f40b75b45298401ad685556d8fc44"
+    },
+    {
+      "path": "output/nyc_traffic/crop_review_4h/source.png",
+      "bytes": 1656574,
+      "sha256": "cfefd44ff79a401ba12a4fa936969e3415e5b21a9fb4c0ea96a10bd221675d24"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/5ave_34st.mp4",
+      "bytes": 405934,
+      "sha256": "1463ec322f83940994e7b9212da245cf843e58463446afb5fbdaf486f2a3ba41"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/5ave_34st.timeline.csv",
+      "bytes": 1599,
+      "sha256": "7a23de43b9aba650c108684a23d6b9f7e58d50b9ac172bbf31f6a4b4fb247829"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/5ave_57st.mp4",
+      "bytes": 677674,
+      "sha256": "45b2a9e18dbb62f23347d9a266cfc576137a28687924eb7516a466528a2c2dee"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/5ave_57st.timeline.csv",
+      "bytes": 1599,
+      "sha256": "7a23de43b9aba650c108684a23d6b9f7e58d50b9ac172bbf31f6a4b4fb247829"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/7ave_43st_ptz.mp4",
+      "bytes": 6827,
+      "sha256": "3dd0c52cdc5c720b9c69fdaf4da86478b898daff7151adb6b8eb0ecd8ad305c2"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/7ave_43st_ptz.timeline.csv",
+      "bytes": 1599,
+      "sha256": "7a23de43b9aba650c108684a23d6b9f7e58d50b9ac172bbf31f6a4b4fb247829"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/broadway_43st.mp4",
+      "bytes": 954419,
+      "sha256": "cf6fa04a2522817bc63ba0bccb3ca81b25479e2136630ee5e7212341e650c86d"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/broadway_43st.timeline.csv",
+      "bytes": 1599,
+      "sha256": "7a23de43b9aba650c108684a23d6b9f7e58d50b9ac172bbf31f6a4b4fb247829"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/broadway_46st_quad_south.mp4",
+      "bytes": 1016192,
+      "sha256": "24f7ce998f7a6867c67b9b0aca8cd98c664e4e70d90dd53186683fc23ed84852"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/broadway_46st_quad_south.timeline.csv",
+      "bytes": 1599,
+      "sha256": "7a23de43b9aba650c108684a23d6b9f7e58d50b9ac172bbf31f6a4b4fb247829"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/central_park_72nd_post37.mp4",
+      "bytes": 739731,
+      "sha256": "d66ee7691744ab25162dbb2946cfb8fe93ede0cf8dd7c79e5412c57a6b8d4814"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/central_park_72nd_post37.timeline.csv",
+      "bytes": 1599,
+      "sha256": "7a23de43b9aba650c108684a23d6b9f7e58d50b9ac172bbf31f6a4b4fb247829"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/central_park_west_72st.mp4",
+      "bytes": 1120197,
+      "sha256": "678b9941fc8e382cd5bf81f333fa09ebd90dc84a41c3b2fa0e99d7b0c25326d7"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/central_park_west_72st.timeline.csv",
+      "bytes": 1599,
+      "sha256": "7a23de43b9aba650c108684a23d6b9f7e58d50b9ac172bbf31f6a4b4fb247829"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/crop_config.json",
+      "bytes": 6317,
+      "sha256": "f5290dae0c81fc2b649bc560331daf2bb76e7934888544e671d935eb259c14a4"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/manifest.json",
+      "bytes": 39783,
+      "sha256": "5d7a4d25938a2ad7150180fd2ec309095e2a771168b5196e1319f0b2919c742d"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/review/5ave_34st.png",
+      "bytes": 311047,
+      "sha256": "bad845661539976d47e832a814fe98a98d1f33334151b495311d5fa01df57eef"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/review/5ave_57st.png",
+      "bytes": 271619,
+      "sha256": "12bca6bc1ca00a4263f8352ee25e94e1f9d6e839252521bec5be16602c778596"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/review/7ave_43st_ptz.png",
+      "bytes": 9408,
+      "sha256": "0d06d850068c1d5eff8973ad8e9352b33226c0e2bf05990cb7571ab60b489776"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/review/broadway_43st.png",
+      "bytes": 344318,
+      "sha256": "6cb54588f242abf7db32544810591451f85bc56c16cbe1b19b0254fba1a88d09"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/review/broadway_46st_quad_south.png",
+      "bytes": 326598,
+      "sha256": "066f37aa16b8138e622239ab7e2ca51fce6cc02b2f55ddbd50b79377f08dcfd3"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/review/central_park_72nd_post37.png",
+      "bytes": 276244,
+      "sha256": "b9a16e243720312a06d92b28f724fce2c04e436b449ae8b1d0c1860f7bd19092"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/review/central_park_west_72st.png",
+      "bytes": 332745,
+      "sha256": "4d50213256468836c3e2bb5d8a5faa88bbcb0235e0ce2f4ac3ecef0c175bec1d"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/review/contact_sheet.jpg",
+      "bytes": 250738,
+      "sha256": "59bffccb6364a27e72e728fe569479f0702f78db9b0ce1d362e580dab3313ed5"
+    },
+    {
+      "path": "output/nyc_traffic/smoke_30_60/review/verification.json",
+      "bytes": 5183,
+      "sha256": "9d96a8a7d9964ed6c17f0358e14bb65c7017c462af1a347a3c372f4706789e84"
+    },
+    {
+      "path": "output/nyc_traffic/source_30s/coordinates.png",
+      "bytes": 2187765,
+      "sha256": "f2f3b3b41cf93089483cb8f0fd38c0a4f259b15def3d6bd63c88a4dc5da3c7ff"
+    },
+    {
+      "path": "output/nyc_traffic/source_30s/preview.json",
+      "bytes": 5693,
+      "sha256": "90513e97899ba87d004c962f508dc4c61a8642f3c79a1351bd10c5e1c5e3604f"
+    },
+    {
+      "path": "output/nyc_traffic/source_30s/source.png",
+      "bytes": 2189120,
+      "sha256": "d176f51bfc7c298446066a037175fafe67a6669424857cc712c9c40e2bb69311"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/5ave_34st/diagnostic.json",
+      "bytes": 5571,
+      "sha256": "eb446eb13004ee624630132618302d289661fa81db01fd71fa74092233bdc0cf"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/5ave_34st/differences.csv",
+      "bytes": 2064,
+      "sha256": "99a0670c5f6e77522ce64adec9aa378b61ba229d5b4e30959255ddc0d8a5b726"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/5ave_57st/diagnostic.json",
+      "bytes": 5718,
+      "sha256": "96ce0c9e95c2ecb11ad48d7d7d5987d8318133a28b8aa1ead8fbb68412b047ab"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/5ave_57st/differences.csv",
+      "bytes": 2245,
+      "sha256": "8203a738dd213082dc55f284f0af47ee770d881895ef3175144702086d97e9b0"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/7ave_43st_ptz/diagnostic.json",
+      "bytes": 5692,
+      "sha256": "b42b14156d1b09301985ecf32fc36d81eadd2dba3fb59504f38daa93f1dd6999"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/7ave_43st_ptz/differences.csv",
+      "bytes": 1398,
+      "sha256": "94563ef981b3efd95aac708fcd61d208e73d4074655ca05e0762d184b2ffe409"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/broadway_43st/diagnostic.json",
+      "bytes": 5579,
+      "sha256": "78b755806a1f29657de21c6de27ac622aea6a5735444f5bfab50e788cac198b1"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/broadway_43st/differences.csv",
+      "bytes": 2240,
+      "sha256": "7fcc7fc130f0b4b9cc401ea8d05eba6a8c2fb9391097c73d8b01f8dd7f3da172"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/broadway_46st_quad_south/diagnostic.json",
+      "bytes": 5601,
+      "sha256": "88d37554633e3ef1244591eef9be62724cbed33773ccb88e2a8c27d350e6ea76"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/broadway_46st_quad_south/differences.csv",
+      "bytes": 2246,
+      "sha256": "38cea3f018ae720dd706328cecf9171f42baaa3bc5edcee90ab3a2dfdd2f15d4"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/central_park_72nd_post37/diagnostic.json",
+      "bytes": 5604,
+      "sha256": "de6bb8903adbb3ca8397bd6e32298406afb2f5f1561d67b1525b8189c8b7f785"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/central_park_72nd_post37/differences.csv",
+      "bytes": 2278,
+      "sha256": "baa86bf4c0847f1af4976ebb22ae2cf496e833297cf5cc0b7a29fa1d59b661a7"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/central_park_west_72st/diagnostic.json",
+      "bytes": 5595,
+      "sha256": "de2094c67ee0b9abb1118979dce04205581076647111d9aa4bd63f728c1ad0d8"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60/central_park_west_72st/differences.csv",
+      "bytes": 2259,
+      "sha256": "bd8ca25b597a5652f57e4f205adf3273a916e9675831cdce41ac02c71ec265c9"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/5ave_34st/diagnostic.json",
+      "bytes": 5755,
+      "sha256": "36f1bb59db4d013bc2a5e2a85184f26d9360f01fe8bf83ccaaf5f137cd9238c6"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/5ave_34st/differences.csv",
+      "bytes": 3825,
+      "sha256": "f33d2000eb89f3c8a3abb485884412e612d4b83118d278bded09b8129d14a579"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/5ave_57st/diagnostic.json",
+      "bytes": 5902,
+      "sha256": "920dc04b1da3b56ef63ae41ca9a9ec042ce1db4f6442bb25416cba3e88266e3a"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/5ave_57st/differences.csv",
+      "bytes": 3593,
+      "sha256": "6282454ebaf1644a49089bfb5aadf62d8f9b04a14d2449c1c185a61fae84ffb2"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/7ave_43st_ptz/diagnostic.json",
+      "bytes": 5876,
+      "sha256": "3ed1e8ce5328a0bf3d3b09c01a32a2a68e7440bbe387e574c450d3ed65ebfcfc"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/7ave_43st_ptz/differences.csv",
+      "bytes": 1879,
+      "sha256": "3bd4ffc4ed90f369927380f9e1796787b442d3da593693c4bb702ec04f620b9b"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/broadway_43st/diagnostic.json",
+      "bytes": 5763,
+      "sha256": "94502c51573a22de74f7fae8dbe4b233fbc6b2df848e811379168e117b529a9c"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/broadway_43st/differences.csv",
+      "bytes": 3943,
+      "sha256": "e145f0df2bdb2d4f18e7b33fd3830924417f520b3a51d2b9c1e4e48170e027e1"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/broadway_46st_quad_south/diagnostic.json",
+      "bytes": 5785,
+      "sha256": "47f565589793a67b180a1556905454270f660ce7551fc309a024bbedd7e55b2e"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/broadway_46st_quad_south/differences.csv",
+      "bytes": 3999,
+      "sha256": "0da0385d119a4e1254ff34a4b2eb906b86e9542e3b653b42429d854f1863a968"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/central_park_72nd_post37/diagnostic.json",
+      "bytes": 5788,
+      "sha256": "b63c23831e759b2ffb2f582c4c13393f83a69e31a8059efdfb17535ce81319cf"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/central_park_72nd_post37/differences.csv",
+      "bytes": 3966,
+      "sha256": "4cfbb42a4f903d0d8ee543e558a2f817dc0e372ae51f4c0297015a0b8b7cb2f3"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/central_park_west_72st/diagnostic.json",
+      "bytes": 5779,
+      "sha256": "17b295e0e62b8cca4a1fabdac1912429ce81afdf340ff6f194b7064d7bb16150"
+    },
+    {
+      "path": "output/nyc_traffic/updates_30_60_quality/central_park_west_72st/differences.csv",
+      "bytes": 3979,
+      "sha256": "69531693d6ffb8ec7e32154ad862bb9af869bbc0fcff7290294bd4e84f76bf6c"
+    },
+    {
+      "path": "output/nyc_traffic/updates_4h_quality/5ave_57st/diagnostic.json",
+      "bytes": 5870,
+      "sha256": "db113559ab2971d203421200ef166112a134b39fbceb1b400654cb7a8c700124"
+    },
+    {
+      "path": "output/nyc_traffic/updates_4h_quality/5ave_57st/differences.csv",
+      "bytes": 2183,
+      "sha256": "0b17559759ec1ff440aa5c4c077ad6ed3993286a20094c21a0bb8a937c9c1743"
+    },
+    {
+      "path": "output/nyc_traffic/updates_4h_quality/7ave_43st_ptz/diagnostic.json",
+      "bytes": 5891,
+      "sha256": "447a633b3ee0a032b3afdf3e0bb456f4b9493b3ac2c5c7d647c9daf0aec91a20"
+    },
+    {
+      "path": "output/nyc_traffic/updates_4h_quality/7ave_43st_ptz/differences.csv",
+      "bytes": 2183,
+      "sha256": "0b17559759ec1ff440aa5c4c077ad6ed3993286a20094c21a0bb8a937c9c1743"
+    },
+    {
+      "path": "output/preprocessing_probe/clip.mp4",
+      "bytes": 70061,
+      "sha256": "378d4e4acfcc4d440b36129619d165b162a160b0e9018a5e5caf233f31ac98f8"
+    },
+    {
+      "path": "output/preprocessing_probe/diagnostic/camera_01/diagnostic.json",
+      "bytes": 5137,
+      "sha256": "29a6163d47d55d1b13523d7dcb359ca32c5a546579172b8d47aaf63717eab737"
+    },
+    {
+      "path": "output/preprocessing_probe/diagnostic/camera_01/differences.csv",
+      "bytes": 1745,
+      "sha256": "e051f55c4153d20665b85db2c45d9d2dbb3cdd15e085863bf716de35ad2f18b4"
+    },
+    {
+      "path": "output/preprocessing_probe/sample_config.json",
+      "bytes": 3878,
+      "sha256": "3012cdc9eb3b1731facdc98d26bdde7cc7c0a7de1d86a1e82ccff2a90285eae8"
+    },
+    {
+      "path": "output/preprocessing_probe/verified_crop/camera_01.mp4",
+      "bytes": 70334,
+      "sha256": "13b86b78b7c41f2b4e43741480cc652b280672e1bcb6b6d2e47d736902ec2cbc"
+    },
+    {
+      "path": "output/preprocessing_probe/verified_crop/camera_01.timeline.csv",
+      "bytes": 1048,
+      "sha256": "2581a7119ab2d986a144b6e3a3cc14665ee7ea162864d9ddb5e3b2d7be5f73a9"
+    },
+    {
+      "path": "output/preprocessing_probe/verified_crop/crop_config.json",
+      "bytes": 3878,
+      "sha256": "3012cdc9eb3b1731facdc98d26bdde7cc7c0a7de1d86a1e82ccff2a90285eae8"
+    },
+    {
+      "path": "output/preprocessing_probe/verified_crop/manifest.json",
+      "bytes": 8765,
+      "sha256": "4594a1596696c8868602d90f85291760d4b78d8e991f7dd407370aedd416ae2c"
+    },
+    {
+      "path": "output/sample/first_frame.jpg",
+      "bytes": 397631,
+      "sha256": "ea6314df63376b1751c39410efe818ee89db18d659f1a77ab8131b62a86592db"
+    },
+    {
+      "path": "output/sample/index.metadata.json",
+      "bytes": 1665,
+      "sha256": "1ad5ab1c22bc9040394da6014a51e37775b4145e90ea7736d2fe6d1e3d68ca4e"
+    },
+    {
+      "path": "output/sample/index.npz",
+      "bytes": 18884,
+      "sha256": "3dd4e23d083280b388848a3f2e61c39914d6715f86173cc0d30fbb376482a1ef"
+    },
+    {
+      "path": "output/sample/matches/rank_01_frame_00000150.jpg",
+      "bytes": 914919,
+      "sha256": "b356be5a3d8617ce15ade612052dc3328cf2b259f2d51f355c99f9b469e88c4c"
+    },
+    {
+      "path": "output/sample/matches/rank_02_frame_00000090.jpg",
+      "bytes": 908306,
+      "sha256": "9b96d0450c3c7570092cab7a52d2ff0eb8483a493467b7af41efdafe3b42eb64"
+    },
+    {
+      "path": "output/sample/matches/rank_03_frame_00000120.jpg",
+      "bytes": 935888,
+      "sha256": "2a705cc8e11b815a38529cb175a3ad78324ab198fab57006443ea3c537ba300a"
+    },
+    {
+      "path": "output/sample/matches/rank_04_frame_00000060.jpg",
+      "bytes": 911268,
+      "sha256": "36510c326e472b77f2aa29adde0777ea795669f95520e9bc21c93acc0c0464f4"
+    },
+    {
+      "path": "output/sample/matches/rank_05_frame_00000000.jpg",
+      "bytes": 908945,
+      "sha256": "87f81b506895aff7ca40a1341616441de1de7d07151f67f397e922b5b8441956"
+    },
+    {
+      "path": "output/sample/matches/results.csv",
+      "bytes": 410,
+      "sha256": "8a7bbcd54107220bab9e58131c0fdd061e92f20284da308994bc3b64f9466a85"
+    },
+    {
+      "path": "output/sample/matches/results.json",
+      "bytes": 1538,
+      "sha256": "91c831d33860628878b4861edf1137e3e910f61e21205da22eefd74e3ff06e61"
+    },
+    {
+      "path": "output/sample/verification.json",
+      "bytes": 1600,
+      "sha256": "87becdbc39a2e9018381fcb5ba1743f79e051dff6a8e93c3fbe2fa77708b21c9"
+    },
+    {
+      "path": "output/sample_repeat/index.metadata.json",
+      "bytes": 1665,
+      "sha256": "1ad5ab1c22bc9040394da6014a51e37775b4145e90ea7736d2fe6d1e3d68ca4e"
+    },
+    {
+      "path": "output/sample_repeat/index.npz",
+      "bytes": 18884,
+      "sha256": "3dd4e23d083280b388848a3f2e61c39914d6715f86173cc0d30fbb376482a1ef"
+    },
+    {
+      "path": "output/sample_repeat/matches/results.csv",
+      "bytes": 280,
+      "sha256": "aacb8afac5a72baf4d64ae121be7317597be2954fa1699ba4be6755111c73c0d"
+    },
+    {
+      "path": "output/sample_repeat/matches/results.json",
+      "bytes": 1416,
+      "sha256": "c50daa529d4afa5a79679d2b895d662a8015d38094dca502d2f7a8769a94b903"
+    },
+    {
+      "path": "output/verification_2026-10-27/index.metadata.json",
+      "bytes": 1880,
+      "sha256": "5bf3e3c54345d8086ca92aab13155c95c59f77daa91331c23fd4a1e6fa3cf956"
+    },
+    {
+      "path": "output/verification_2026-10-27/index.npz",
+      "bytes": 19632,
+      "sha256": "735bef4b4ed1fd2f18ccf710f2f11be03f851270ba36d1cc85a783fb33b942f9"
+    },
+    {
+      "path": "output/verification_2026-10-27/index_only_guard/results.csv",
+      "bytes": 280,
+      "sha256": "aacb8afac5a72baf4d64ae121be7317597be2954fa1699ba4be6755111c73c0d"
+    },
+    {
+      "path": "output/verification_2026-10-27/index_only_guard/results.json",
+      "bytes": 1444,
+      "sha256": "05019201d7fa79997cf3dace605277b48e53fdb2d99017e9cd0393a1279b1ace"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01/rank_01_frame_00000150.jpg",
+      "bytes": 914919,
+      "sha256": "b356be5a3d8617ce15ade612052dc3328cf2b259f2d51f355c99f9b469e88c4c"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01/rank_02_frame_00000090.jpg",
+      "bytes": 908306,
+      "sha256": "9b96d0450c3c7570092cab7a52d2ff0eb8483a493467b7af41efdafe3b42eb64"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01/rank_03_frame_00000120.jpg",
+      "bytes": 935888,
+      "sha256": "2a705cc8e11b815a38529cb175a3ad78324ab198fab57006443ea3c537ba300a"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01/rank_04_frame_00000060.jpg",
+      "bytes": 911268,
+      "sha256": "36510c326e472b77f2aa29adde0777ea795669f95520e9bc21c93acc0c0464f4"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01/rank_05_frame_00000000.jpg",
+      "bytes": 908945,
+      "sha256": "87f81b506895aff7ca40a1341616441de1de7d07151f67f397e922b5b8441956"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01/results.csv",
+      "bytes": 410,
+      "sha256": "8a7bbcd54107220bab9e58131c0fdd061e92f20284da308994bc3b64f9466a85"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01/results.json",
+      "bytes": 1573,
+      "sha256": "48942454c96c8110c8428fc51034db6a7f7856cbe5f06312ac5fb97fb9948931"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01_repeat/rank_01_frame_00000150.jpg",
+      "bytes": 914919,
+      "sha256": "b356be5a3d8617ce15ade612052dc3328cf2b259f2d51f355c99f9b469e88c4c"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01_repeat/rank_02_frame_00000090.jpg",
+      "bytes": 908306,
+      "sha256": "9b96d0450c3c7570092cab7a52d2ff0eb8483a493467b7af41efdafe3b42eb64"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01_repeat/rank_03_frame_00000120.jpg",
+      "bytes": 935888,
+      "sha256": "2a705cc8e11b815a38529cb175a3ad78324ab198fab57006443ea3c537ba300a"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01_repeat/rank_04_frame_00000060.jpg",
+      "bytes": 911268,
+      "sha256": "36510c326e472b77f2aa29adde0777ea795669f95520e9bc21c93acc0c0464f4"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01_repeat/rank_05_frame_00000000.jpg",
+      "bytes": 908945,
+      "sha256": "87f81b506895aff7ca40a1341616441de1de7d07151f67f397e922b5b8441956"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01_repeat/results.csv",
+      "bytes": 410,
+      "sha256": "8a7bbcd54107220bab9e58131c0fdd061e92f20284da308994bc3b64f9466a85"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_01_repeat/results.json",
+      "bytes": 1573,
+      "sha256": "48942454c96c8110c8428fc51034db6a7f7856cbe5f06312ac5fb97fb9948931"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02/rank_01_frame_00000060.jpg",
+      "bytes": 911268,
+      "sha256": "36510c326e472b77f2aa29adde0777ea795669f95520e9bc21c93acc0c0464f4"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02/rank_02_frame_00000000.jpg",
+      "bytes": 908945,
+      "sha256": "87f81b506895aff7ca40a1341616441de1de7d07151f67f397e922b5b8441956"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02/rank_03_frame_00000030.jpg",
+      "bytes": 869787,
+      "sha256": "8a8d93d1aa2fe57326427f79884b8123cdb6630ab41dc7505c6add15dcf8250d"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02/rank_04_frame_00000120.jpg",
+      "bytes": 935888,
+      "sha256": "2a705cc8e11b815a38529cb175a3ad78324ab198fab57006443ea3c537ba300a"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02/rank_05_frame_00000150.jpg",
+      "bytes": 914919,
+      "sha256": "b356be5a3d8617ce15ade612052dc3328cf2b259f2d51f355c99f9b469e88c4c"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02/results.csv",
+      "bytes": 412,
+      "sha256": "52ccbb7a919b1038ae397791399062b529fe57fe34181b35c52c7beb2253f25f"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02/results.json",
+      "bytes": 1582,
+      "sha256": "993874a14f847cce43ad1868434988384831f6fc17fbc4a192882ed6635020ee"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02_repeat/rank_01_frame_00000060.jpg",
+      "bytes": 911268,
+      "sha256": "36510c326e472b77f2aa29adde0777ea795669f95520e9bc21c93acc0c0464f4"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02_repeat/rank_02_frame_00000000.jpg",
+      "bytes": 908945,
+      "sha256": "87f81b506895aff7ca40a1341616441de1de7d07151f67f397e922b5b8441956"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02_repeat/rank_03_frame_00000030.jpg",
+      "bytes": 869787,
+      "sha256": "8a8d93d1aa2fe57326427f79884b8123cdb6630ab41dc7505c6add15dcf8250d"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02_repeat/rank_04_frame_00000120.jpg",
+      "bytes": 935888,
+      "sha256": "2a705cc8e11b815a38529cb175a3ad78324ab198fab57006443ea3c537ba300a"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02_repeat/rank_05_frame_00000150.jpg",
+      "bytes": 914919,
+      "sha256": "b356be5a3d8617ce15ade612052dc3328cf2b259f2d51f355c99f9b469e88c4c"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02_repeat/results.csv",
+      "bytes": 412,
+      "sha256": "52ccbb7a919b1038ae397791399062b529fe57fe34181b35c52c7beb2253f25f"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_02_repeat/results.json",
+      "bytes": 1582,
+      "sha256": "993874a14f847cce43ad1868434988384831f6fc17fbc4a192882ed6635020ee"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03/rank_01_frame_00000090.jpg",
+      "bytes": 908306,
+      "sha256": "9b96d0450c3c7570092cab7a52d2ff0eb8483a493467b7af41efdafe3b42eb64"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03/rank_02_frame_00000030.jpg",
+      "bytes": 869787,
+      "sha256": "8a8d93d1aa2fe57326427f79884b8123cdb6630ab41dc7505c6add15dcf8250d"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03/rank_03_frame_00000150.jpg",
+      "bytes": 914919,
+      "sha256": "b356be5a3d8617ce15ade612052dc3328cf2b259f2d51f355c99f9b469e88c4c"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03/rank_04_frame_00000060.jpg",
+      "bytes": 911268,
+      "sha256": "36510c326e472b77f2aa29adde0777ea795669f95520e9bc21c93acc0c0464f4"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03/rank_05_frame_00000120.jpg",
+      "bytes": 935888,
+      "sha256": "2a705cc8e11b815a38529cb175a3ad78324ab198fab57006443ea3c537ba300a"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03/results.csv",
+      "bytes": 413,
+      "sha256": "cf1b012dd0379a94b43cdc0bc91391e3fe323f3acd98767cc49a79340b5ba52d"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03/results.json",
+      "bytes": 1575,
+      "sha256": "c0298f888874012ee693f4064e062e08c5f8fc3572bb0a9489da72d50b50429c"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03_repeat/rank_01_frame_00000090.jpg",
+      "bytes": 908306,
+      "sha256": "9b96d0450c3c7570092cab7a52d2ff0eb8483a493467b7af41efdafe3b42eb64"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03_repeat/rank_02_frame_00000030.jpg",
+      "bytes": 869787,
+      "sha256": "8a8d93d1aa2fe57326427f79884b8123cdb6630ab41dc7505c6add15dcf8250d"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03_repeat/rank_03_frame_00000150.jpg",
+      "bytes": 914919,
+      "sha256": "b356be5a3d8617ce15ade612052dc3328cf2b259f2d51f355c99f9b469e88c4c"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03_repeat/rank_04_frame_00000060.jpg",
+      "bytes": 911268,
+      "sha256": "36510c326e472b77f2aa29adde0777ea795669f95520e9bc21c93acc0c0464f4"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03_repeat/rank_05_frame_00000120.jpg",
+      "bytes": 935888,
+      "sha256": "2a705cc8e11b815a38529cb175a3ad78324ab198fab57006443ea3c537ba300a"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03_repeat/results.csv",
+      "bytes": 413,
+      "sha256": "cf1b012dd0379a94b43cdc0bc91391e3fe323f3acd98767cc49a79340b5ba52d"
+    },
+    {
+      "path": "output/verification_2026-10-27/query_03_repeat/results.json",
+      "bytes": 1575,
+      "sha256": "c0298f888874012ee693f4064e062e08c5f8fc3572bb0a9489da72d50b50429c"
+    },
+    {
+      "path": "output/verification_2026-10-27/verification.json",
+      "bytes": 27455,
+      "sha256": "a5c5fe0ce7df6c66d1b4085a2da0e4a0e0b44ece737930d3e4f7697e51d265bd"
+    }
+  ],
+  "source_recording_untouched": {
+    "path": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+    "size_bytes": 5649293214,
+    "mtime_ns": 1793413639635746677,
+    "sampled_sha256": "d107e3b7cdbba5e2b9aaf477f809107026e61a7b3ae6a2c47aba85a43828e366",
+    "metadata": {
+      "width": 2436,
+      "height": 1568,
+      "video_start_seconds": 0.0,
+      "video_end_seconds": 20432.595,
+      "video_duration_seconds": 20432.595,
+      "format_start_time": 0.0,
+      "stream_start_time": 0.0,
+      "avg_frame_rate": "5767000/4086519",
+      "time_base": "1/600",
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "duration_basis": "video stream metadata",
+      "ffprobe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "mime_codec_string": "avc1.4d0033",
+            "width": 2436,
+            "height": 1568,
+            "coded_width": 2436,
+            "coded_height": 1568,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 51,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "5767000/4086519",
+            "time_base": "1/600",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 12259557,
+            "duration": "20432.595000",
+            "bit_rate": "2211520",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "28835",
+            "extradata_size": 31,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-10-30T20:46:47.000000Z",
+              "language": "und",
+              "handler_name": "Core Media Video",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "H.264"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "20432.595000",
+          "size": "5649293214",
+          "bit_rate": "2211874",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "qt  ",
+            "minor_version": "0",
+            "compatible_brands": "qt  ",
+            "creation_time": "2026-10-30T20:46:47.000000Z",
+            "com.apple.quicktime.author": "ReplayKitRecording",
+            "com.apple.quicktime.full-frame-rate-playback-intent": "1"
+          }
+        }
+      }
+    }
+  },
+  "crop_rectangles_unchanged": true,
+  "additional_document_preservation": {
+    "old_detailed_readme": "docs/BASELINE_USAGE.md",
+    "old_preparation_report": "docs/DATA_PREPARATION_LEGACY.md"
+  },
+  "final_validation": "experiments/final_validation_2026-11-03/validation.json"
+}

@@ -1,0 +1,17 @@
+camera_id,source_start_seconds,source_end_seconds_exclusive,duration_seconds,status
+5ave_57st,0.0,2800.935,2800.935,available_no_detected_issue
+5ave_57st,2800.935,20432.595,17631.66,confirmed_unavailable_black
+central_park_west_72st,0.0,20432.595,20432.595,available_no_detected_issue
+broadway_43st,0.0,20432.595,20432.595,available_no_detected_issue
+broadway_46st_quad_south,0.0,20432.595,20432.595,available_no_detected_issue
+5ave_34st,0.0,4923.58,4923.58,available_no_detected_issue
+5ave_34st,4923.58,5029.715,106.13500000000022,uncertain_frozen
+5ave_34st,5029.715,20432.595,15402.880000000001,available_no_detected_issue
+7ave_43st_ptz,0.0,17.583333333333332,17.583333333333332,available_no_detected_issue
+7ave_43st_ptz,17.583333333333332,17817.333333333332,17799.75,confirmed_unavailable_black
+7ave_43st_ptz,17817.333333333332,17817.383333333335,0.05000000000291038,confirmed_unavailable_black
+7ave_43st_ptz,17817.383333333335,20432.595,2615.211666666666,confirmed_unavailable_black
+central_park_72nd_post37,0.0,9172.871666666666,9172.871666666666,available_no_detected_issue
+central_park_72nd_post37,9172.871666666666,9289.025,116.15333333333365,uncertain_frozen
+central_park_72nd_post37,9289.025,9459.245,170.22000000000116,confirmed_unavailable_service
+central_park_72nd_post37,9459.245,20432.595,10973.35,available_no_detected_issue

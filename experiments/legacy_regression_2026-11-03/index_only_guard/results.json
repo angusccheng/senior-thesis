@@ -1,0 +1,58 @@
+{
+  "query": "cars driving on a road beside trees",
+  "top_k": 5,
+  "index": "/Users/anguscheng/Downloads/video-search-baseline/experiments/legacy_regression_2026-11-03/index.npz",
+  "index_sha256": "8cc2da50b1383f7d9531f88f37f5bed6e6d7fca773bbde25cf67aded779bd666",
+  "encoder": {
+    "model": "ViT-B-32",
+    "pretrained": "laion2b_s34b_b79k",
+    "weights_sha256": "e3267697543bbe2b3a7bd68f10d1b683ad822a7ad6088f45c32ea33b3c18cc58",
+    "precision": "fp32",
+    "device": "cpu",
+    "seed": 0,
+    "threads": 4
+  },
+  "previews": false,
+  "results": [
+    {
+      "rank": 1,
+      "frame_number": 150,
+      "seconds": 5.0,
+      "cosine_similarity": 0.2599841058254242,
+      "timestamp": "00:00:05.000",
+      "image": ""
+    },
+    {
+      "rank": 2,
+      "frame_number": 90,
+      "seconds": 3.0,
+      "cosine_similarity": 0.23355239629745483,
+      "timestamp": "00:00:03.000",
+      "image": ""
+    },
+    {
+      "rank": 3,
+      "frame_number": 120,
+      "seconds": 4.0,
+      "cosine_similarity": 0.23326246440410614,
+      "timestamp": "00:00:04.000",
+      "image": ""
+    },
+    {
+      "rank": 4,
+      "frame_number": 60,
+      "seconds": 2.0,
+      "cosine_similarity": 0.2321593165397644,
+      "timestamp": "00:00:02.000",
+      "image": ""
+    },
+    {
+      "rank": 5,
+      "frame_number": 0,
+      "seconds": 0.0,
+      "cosine_similarity": 0.21471238136291504,
+      "timestamp": "00:00:00.000",
+      "image": ""
+    }
+  ]
+}

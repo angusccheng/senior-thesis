@@ -1,0 +1,14 @@
+{
+  "checked_local_links": 96,
+  "broken_links": [],
+  "files": [
+    "README.md",
+    "docs/BASELINE_USAGE.md",
+    "docs/baseline_verification.md",
+    "docs/DATA_PREPARATION.md",
+    "docs/CLEANUP_REPORT.md",
+    "docs/DATA_PREPARATION_LEGACY.md",
+    "docs/CAMERA_AVAILABILITY.md",
+    "docs/DEVELOPMENT_VERIFICATION.md"
+  ]
+}

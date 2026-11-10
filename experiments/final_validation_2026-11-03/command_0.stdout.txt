@@ -1,0 +1,3 @@
+Exporting camera_01: 1.050–2.050 s
+Exporting camera_02: 1.050–2.050 s
+Exporting camera_01: 0.000–4.000 s

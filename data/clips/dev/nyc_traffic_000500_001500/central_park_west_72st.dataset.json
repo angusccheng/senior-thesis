@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "dataset_id": "nyc_traffic_dev_000500_001500_v1",
+  "camera_id": "central_park_west_72st",
+  "camera_description": "Central Park West @ 72 St",
+  "source_recording": {
+    "id": "nyc_traffic",
+    "path": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+    "size_bytes": 5649293214,
+    "mtime_ns": 1793413639635746677,
+    "sampled_sha256": "d107e3b7cdbba5e2b9aaf477f809107026e61a7b3ae6a2c47aba85a43828e366",
+    "metadata": {
+      "width": 2436,
+      "height": 1568,
+      "video_start_seconds": 0.0,
+      "video_end_seconds": 20432.595,
+      "video_duration_seconds": 20432.595,
+      "format_start_time": 0.0,
+      "stream_start_time": 0.0,
+      "avg_frame_rate": "5767000/4086519",
+      "time_base": "1/600",
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "duration_basis": "video stream metadata",
+      "ffprobe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "mime_codec_string": "avc1.4d0033",
+            "width": 2436,
+            "height": 1568,
+            "coded_width": 2436,
+            "coded_height": 1568,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 51,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "5767000/4086519",
+            "time_base": "1/600",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 12259557,
+            "duration": "20432.595000",
+            "bit_rate": "2211520",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "28835",
+            "extradata_size": 31,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-10-30T20:46:47.000000Z",
+              "language": "und",
+              "handler_name": "Core Media Video",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "H.264"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "20432.595000",
+          "size": "5649293214",
+          "bit_rate": "2211874",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "qt  ",
+            "minor_version": "0",
+            "compatible_brands": "qt  ",
+            "creation_time": "2026-10-30T20:46:47.000000Z",
+            "com.apple.quicktime.author": "ReplayKitRecording",
+            "com.apple.quicktime.full-frame-rate-playback-intent": "1"
+          }
+        }
+      }
+    }
+  },
+  "video": {
+    "path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/central_park_west_72st.mp4",
+    "sha256": "283d1b4edabcbc02d42c4fa51b6d39a2d9d298cd7c8e3a0d6bf276eb1229b7b1",
+    "metadata": {
+      "width": 592,
+      "height": 372,
+      "video_start_seconds": 0.0,
+      "video_end_seconds": 598.76,
+      "video_duration_seconds": 598.76,
+      "format_start_time": 0.0,
+      "stream_start_time": 0.0,
+      "avg_frame_rate": "21075/14969",
+      "time_base": "1/1000000",
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "duration_basis": "video stream metadata",
+      "ffprobe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "mime_codec_string": "avc1.64001f",
+            "width": 592,
+            "height": 372,
+            "coded_width": 592,
+            "coded_height": 372,
+            "has_b_frames": 0,
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "21075/14969",
+            "time_base": "1/1000000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 598760000,
+            "duration": "598.760000",
+            "bit_rate": "260529",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "843",
+            "extradata_size": 49,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "Core Media Video",
+              "encoder": "Lavc63.1.102 libx264"
+            }
+          }
+        ],
+        "format": {
+          "filename": "data/clips/dev/nyc_traffic_000500_001500/central_park_west_72st.mp4",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "598.760000",
+          "size": "19510390",
+          "bit_rate": "260677",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf63.1.102"
+          }
+        }
+      }
+    }
+  },
+  "timestamp_mapping": {
+    "path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/central_park_west_72st.timeline.csv",
+    "sha256": "7929c727106d5d0062de45420c47179e1439c113e5e5dfcdebdb50d4f730ae60"
+  },
+  "availability_report": {
+    "path": "/Users/anguscheng/Downloads/video-search-baseline/data/metadata/nyc_traffic/availability_v1/availability.json",
+    "sha256": "52a10e9ba01b4176132e36ce8aaad783c22f677dd30af4bbe7541404e0335b15"
+  },
+  "availability_policy": "exclude_confirmed_unavailable_only",
+  "valid_source_intervals": [
+    [
+      0.0,
+      20432.595
+    ]
+  ],
+  "uncertain_source_intervals": [],
+  "confirmed_unavailable_intervals": [],
+  "requested_source_interval": [
+    300.0,
+    900.0
+  ],
+  "first_retained_source_seconds": 301.73833333333334,
+  "last_retained_source_seconds": 898.5316666666666,
+  "crop": [
+    924,
+    196,
+    592,
+    372
+  ],
+  "preprocessing": {
+    "encoding": {
+      "crf": 18,
+      "preset": "medium",
+      "threads": 4
+    },
+    "no_autorotate": true,
+    "temporal_resampling": false,
+    "boundary_policy": "Keep decoded PTS in [start,end); rebase first retained frame to zero. No boundary padding or FPS conversion. Sparse VFR means playable length may be shorter than requested interval.",
+    "config_path": "/Users/anguscheng/Downloads/video-search-baseline/configs/nyc_traffic.json",
+    "config_sha256": "a32b3e5fd6708fbd0901877502837013f591f06039bc861b653a0479286f6d03",
+    "export_manifest_path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/manifest.json",
+    "export_manifest_sha256": "bcd6f8e41d3ec7fed37ab4965cb04bb6acee6bcdc21ba0f72442bb885ccea231"
+  }
+}

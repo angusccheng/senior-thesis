@@ -1,0 +1,92 @@
+{
+  "source_unchanged": true,
+  "cameras": [
+    {
+      "id": "broadway_46st_quad_south",
+      "decoded_frames": 843,
+      "dimensions": [
+        592,
+        356
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "source_seconds": 301.738333333333,
+          "cropped_seconds": 0.0,
+          "mean_absolute_pixel_error": 2.354271173477173
+        },
+        {
+          "frame": 421,
+          "source_seconds": 592.16,
+          "cropped_seconds": 290.421667,
+          "mean_absolute_pixel_error": 2.1230971813201904
+        },
+        {
+          "frame": 842,
+          "source_seconds": 898.531666666667,
+          "cropped_seconds": 596.793333,
+          "mean_absolute_pixel_error": 3.968231201171875
+        }
+      ]
+    },
+    {
+      "id": "broadway_43st",
+      "decoded_frames": 843,
+      "dimensions": [
+        592,
+        376
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "source_seconds": 301.738333333333,
+          "cropped_seconds": 0.0,
+          "mean_absolute_pixel_error": 2.5837271213531494
+        },
+        {
+          "frame": 421,
+          "source_seconds": 592.16,
+          "cropped_seconds": 290.421667,
+          "mean_absolute_pixel_error": 1.935213327407837
+        },
+        {
+          "frame": 842,
+          "source_seconds": 898.531666666667,
+          "cropped_seconds": 596.793333,
+          "mean_absolute_pixel_error": 3.3358850479125977
+        }
+      ]
+    },
+    {
+      "id": "central_park_west_72st",
+      "decoded_frames": 843,
+      "dimensions": [
+        592,
+        372
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "source_seconds": 301.738333333333,
+          "cropped_seconds": 0.0,
+          "mean_absolute_pixel_error": 2.1764824390411377
+        },
+        {
+          "frame": 421,
+          "source_seconds": 592.16,
+          "cropped_seconds": 290.421667,
+          "mean_absolute_pixel_error": 1.752196192741394
+        },
+        {
+          "frame": 842,
+          "source_seconds": 898.531666666667,
+          "cropped_seconds": 596.793333,
+          "mean_absolute_pixel_error": 2.9011142253875732
+        }
+      ]
+    }
+  ],
+  "crops_approved": true,
+  "note": "Source/cropped frame MAE uses lossy H.264 tolerance <=6 gray levels; first/middle/last frames checked.",
+  "passed": true
+}

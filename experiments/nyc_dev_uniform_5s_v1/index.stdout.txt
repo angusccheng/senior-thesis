@@ -1,0 +1,3 @@
+Loading OpenCLIP (first run downloads weights)...
+Indexed 120 frames; payload 248,640 bytes; archive 285,130 bytes
+Saved indexes/nyc_dev_uniform_5s_v1/index.npz and indexes/nyc_dev_uniform_5s_v1/index.metadata.json

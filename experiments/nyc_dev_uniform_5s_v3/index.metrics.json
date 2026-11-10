@@ -1,0 +1,6 @@
+{
+  "operation_seconds_excluding_imports": 6.527811666019261,
+  "peak_rss_bytes": 1166409728,
+  "rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; Darwin bytes, Linux KiB converted to bytes",
+  "retrieval_guards": false
+}

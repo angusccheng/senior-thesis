@@ -1,0 +1,6 @@
+{
+  "url": "https://download.samplelib.com/mp4/sample-5s.mp4",
+  "sha256": "05bd857af7f70bf51b6aac1144046973bf3325c9101a554bc27dc9607dbbd8f5",
+  "bytes": 2848208,
+  "purpose": "Pipeline smoke test only; not a retrieval evaluation dataset"
+}

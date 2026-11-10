@@ -1,0 +1,1719 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+    "size_bytes": 5649293214,
+    "mtime_ns": 1793413639635746677,
+    "sampled_sha256": "d107e3b7cdbba5e2b9aaf477f809107026e61a7b3ae6a2c47aba85a43828e366",
+    "metadata": {
+      "width": 2436,
+      "height": 1568,
+      "video_start_seconds": 0.0,
+      "video_end_seconds": 20432.595,
+      "video_duration_seconds": 20432.595,
+      "format_start_time": 0.0,
+      "stream_start_time": 0.0,
+      "avg_frame_rate": "5767000/4086519",
+      "time_base": "1/600",
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "duration_basis": "video stream metadata",
+      "ffprobe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "mime_codec_string": "avc1.4d0033",
+            "width": 2436,
+            "height": 1568,
+            "coded_width": 2436,
+            "coded_height": 1568,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 51,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "5767000/4086519",
+            "time_base": "1/600",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 12259557,
+            "duration": "20432.595000",
+            "bit_rate": "2211520",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "28835",
+            "extradata_size": 31,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-10-30T20:46:47.000000Z",
+              "language": "und",
+              "handler_name": "Core Media Video",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "H.264"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "20432.595000",
+          "size": "5649293214",
+          "bit_rate": "2211874",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "qt  ",
+            "minor_version": "0",
+            "compatible_brands": "qt  ",
+            "creation_time": "2026-10-30T20:46:47.000000Z",
+            "com.apple.quicktime.author": "ReplayKitRecording",
+            "com.apple.quicktime.full-frame-rate-playback-intent": "1"
+          }
+        }
+      }
+    }
+  },
+  "source_id": "nyc_traffic",
+  "timeline": "source seconds relative to format.start_time; stored-frame/held-frame evidence",
+  "source_duration_seconds": 20432.595,
+  "default_indexing_policy": "exclude_confirmed_unavailable_only",
+  "review_decisions": {
+    "5ave_57st:black:0": {
+      "decision": "confirm_black_outage",
+      "reviewer": "assistant visual review of original cropped snapshots",
+      "evidence": [
+        {
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/review/5ave_57st_black_0_0.png",
+          "source_seconds": 2800.935,
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "2799.935000000",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=2800.934999999000,crop=592:370:116:198:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        },
+        {
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/review/5ave_57st_black_0_1.png",
+          "source_seconds": 11271.501666666667,
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "11270.501666667",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=11271.501666665667,crop=592:370:116:198:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        },
+        {
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/review/5ave_57st_black_0_2.png",
+          "source_seconds": 20432.56166666667,
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "20431.561666667",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=20432.561666665668,crop=592:370:116:198:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        }
+      ],
+      "reason": "Camera image is black with persistent DOT mark. Corresponding interior analysis ROI is flat black. Reviewed beginning, middle and end."
+    },
+    "7ave_43st_ptz:black:0": {
+      "decision": "confirm_black_outage",
+      "reviewer": "assistant visual review of original cropped snapshots",
+      "evidence": [
+        {
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_0_0.png",
+          "source_seconds": 17.6,
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "16.600000000",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=17.599999999000,crop=592:376:1732:676:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        },
+        {
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_0_1.png",
+          "source_seconds": 8618.176666666666,
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "8617.176666667",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=8618.176666665666,crop=592:376:1732:676:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        },
+        {
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_0_2.png",
+          "source_seconds": 17817.316666666666,
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "17816.316666667",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=17817.316666665665,crop=592:376:1732:676:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        }
+      ],
+      "reason": "Camera image is black with persistent DOT mark. Corresponding interior analysis ROI is flat black. Reviewed beginning, middle and end."
+    },
+    "7ave_43st_ptz:black:1": {
+      "decision": "confirm_black_outage",
+      "reviewer": "assistant visual review of original cropped snapshots",
+      "evidence": [
+        {
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_1_0.png",
+          "source_seconds": 17817.383333333335,
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "17816.383333333",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=17817.383333332335,crop=592:376:1732:676:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        },
+        {
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_1_1.png",
+          "source_seconds": 19110.963333333333,
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "19109.963333333",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=19110.963333332333,crop=592:376:1732:676:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        },
+        {
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_1_2.png",
+          "source_seconds": 20432.56166666667,
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "20431.561666667",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=20432.561666665668,crop=592:376:1732:676:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        }
+      ],
+      "reason": "Camera image is black with persistent DOT mark. Corresponding interior analysis ROI is flat black. Reviewed beginning, middle and end."
+    },
+    "7ave_43st_ptz:manual:cursor_overlay": {
+      "decision": "confirm_black_outage",
+      "start": 17817.333333333332,
+      "end": 17817.383333333335,
+      "reviewer": "assistant visual review",
+      "evidence": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_transient_nonblack.png",
+      "reason": "Pointer over a black player; no camera scene returned. This bridges the detector false recovery."
+    },
+    "central_park_72nd_post37:manual:service_card": {
+      "decision": "confirm_service_unavailable",
+      "start": 9289.025,
+      "end": 9459.245,
+      "reviewer": "assistant visual review of source snapshots",
+      "reason": "Explicit This camera is being serviced card; reviewed immediately preceding scene, first/middle/last card frames, and recovered scene.",
+      "evidence": [
+        {
+          "source_seconds": 9289.008333333333,
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/service_review/service_0.png",
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "9288.008333333",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=9289.008333332333,crop=592:406:116:1132:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        },
+        {
+          "source_seconds": 9289.025,
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/service_review/service_1.png",
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "9288.025000000",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=9289.024999998999,crop=592:406:116:1132:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        },
+        {
+          "source_seconds": 9375.193333333333,
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/service_review/service_2.png",
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "9374.193333333",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=9375.193333332332,crop=592:406:116:1132:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        },
+        {
+          "source_seconds": 9459.195,
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/service_review/service_3.png",
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "9458.195000000",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=9459.194999998999,crop=592:406:116:1132:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        },
+        {
+          "source_seconds": 9459.245,
+          "path": "data/metadata/nyc_traffic/availability_scan_v1/service_review/service_4.png",
+          "command": [
+            "ffmpeg",
+            "-hide_banner",
+            "-nostdin",
+            "-nostats",
+            "-n",
+            "-copyts",
+            "-start_at_zero",
+            "-ss",
+            "9458.245000000",
+            "-noautorotate",
+            "-i",
+            "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "-map",
+            "0:v:0",
+            "-an",
+            "-sn",
+            "-dn",
+            "-loglevel",
+            "error",
+            "-vf",
+            "trim=start=9459.244999999000,crop=592:406:116:1132:exact=1",
+            "-frames:v",
+            "1",
+            "-f",
+            "image2pipe",
+            "-c:v",
+            "png",
+            "pipe:1"
+          ]
+        }
+      ]
+    }
+  },
+  "cameras": {
+    "5ave_57st": {
+      "description": "5 Ave @ 57 St",
+      "crop": [
+        116,
+        198,
+        592,
+        370
+      ],
+      "diagnostic_roi": [
+        16,
+        16,
+        560,
+        274
+      ],
+      "frames": 28835,
+      "observable_updates": 1386,
+      "observable_update_hz": 0.06783290429320454,
+      "exact_repeated_pair_fraction": 0.8611361587015329,
+      "near_unchanged_pair_fraction": 0.9515502531733371,
+      "strict_black_frame_fraction": 0.8606554534419976,
+      "nonblack_observable_update_hz": 0.4944806792534115,
+      "nonblack_near_unchanged_pair_fraction": 0.6524769728653224,
+      "nonblack_exact_repeated_pair_fraction": 0.0034851879512073688,
+      "nonblack_pair_seconds": 2800.9183333333335,
+      "frame_metrics_csv": "5ave_57st.frames.csv",
+      "intervals": [
+        {
+          "start": 0.0,
+          "end": 2800.935,
+          "duration_seconds": 2800.935,
+          "status": "available_no_detected_issue",
+          "candidate_ids": []
+        },
+        {
+          "start": 2800.935,
+          "end": 20432.595,
+          "duration_seconds": 17631.66,
+          "status": "confirmed_unavailable_black",
+          "candidate_ids": [
+            "5ave_57st:black:0"
+          ]
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "start": 2800.935,
+          "end": 20432.595,
+          "duration": 17631.66,
+          "status": "confirmed_unavailable_black",
+          "candidate_id": "5ave_57st:black:0",
+          "evidence": {
+            "decision": "confirm_black_outage",
+            "reviewer": "assistant visual review of original cropped snapshots",
+            "evidence": [
+              {
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/review/5ave_57st_black_0_0.png",
+                "source_seconds": 2800.935,
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "2799.935000000",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=2800.934999999000,crop=592:370:116:198:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              },
+              {
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/review/5ave_57st_black_0_1.png",
+                "source_seconds": 11271.501666666667,
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "11270.501666667",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=11271.501666665667,crop=592:370:116:198:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              },
+              {
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/review/5ave_57st_black_0_2.png",
+                "source_seconds": 20432.56166666667,
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "20431.561666667",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=20432.561666665668,crop=592:370:116:198:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              }
+            ],
+            "reason": "Camera image is black with persistent DOT mark. Corresponding interior analysis ROI is flat black. Reviewed beginning, middle and end."
+          }
+        }
+      ],
+      "confirmed_unavailable_intervals": [
+        [
+          2800.935,
+          20432.595
+        ]
+      ],
+      "uncertain_intervals": [],
+      "unflagged_intervals": [
+        [
+          0.0,
+          2800.935
+        ]
+      ],
+      "valid_source_intervals": [
+        [
+          0.0,
+          2800.935
+        ]
+      ],
+      "total_usable_seconds": 2800.935,
+      "usable_duration_definition": "Conservative unflagged duration, excluding both confirmed outages and uncertain intervals; not annotated ground truth.",
+      "eligible_seconds_excluding_confirmed_outages": 2800.935,
+      "confirmed_unavailable_seconds": 17631.66,
+      "uncertain_seconds": 0
+    },
+    "central_park_west_72st": {
+      "description": "Central Park West @ 72 St",
+      "crop": [
+        924,
+        196,
+        592,
+        372
+      ],
+      "diagnostic_roi": [
+        16,
+        16,
+        560,
+        276
+      ],
+      "frames": 28835,
+      "observable_updates": 6864,
+      "observable_update_hz": 0.33593438316634633,
+      "exact_repeated_pair_fraction": 0.0041617534854685445,
+      "near_unchanged_pair_fraction": 0.6484011930359992,
+      "strict_black_frame_fraction": 0.0,
+      "nonblack_observable_update_hz": 0.33593438316634633,
+      "nonblack_near_unchanged_pair_fraction": 0.6484011930359992,
+      "nonblack_exact_repeated_pair_fraction": 0.0041617534854685445,
+      "nonblack_pair_seconds": 20432.56166666667,
+      "frame_metrics_csv": "central_park_west_72st.frames.csv",
+      "intervals": [
+        {
+          "start": 0.0,
+          "end": 20432.595,
+          "duration_seconds": 20432.595,
+          "status": "available_no_detected_issue",
+          "candidate_ids": []
+        }
+      ],
+      "evidence_candidates": [],
+      "confirmed_unavailable_intervals": [],
+      "uncertain_intervals": [],
+      "unflagged_intervals": [
+        [
+          0.0,
+          20432.595
+        ]
+      ],
+      "valid_source_intervals": [
+        [
+          0.0,
+          20432.595
+        ]
+      ],
+      "total_usable_seconds": 20432.595,
+      "usable_duration_definition": "Conservative unflagged duration, excluding both confirmed outages and uncertain intervals; not annotated ground truth.",
+      "eligible_seconds_excluding_confirmed_outages": 20432.595,
+      "confirmed_unavailable_seconds": 0,
+      "uncertain_seconds": 0
+    },
+    "broadway_43st": {
+      "description": "Broadway @ 43 St",
+      "crop": [
+        1732,
+        192,
+        592,
+        376
+      ],
+      "diagnostic_roi": [
+        16,
+        16,
+        560,
+        280
+      ],
+      "frames": 28835,
+      "observable_updates": 9997,
+      "observable_update_hz": 0.4892680694221975,
+      "exact_repeated_pair_fraction": 0.0016300201151418464,
+      "near_unchanged_pair_fraction": 0.6507248387320524,
+      "strict_black_frame_fraction": 0.0,
+      "nonblack_observable_update_hz": 0.4892680694221975,
+      "nonblack_near_unchanged_pair_fraction": 0.6507248387320524,
+      "nonblack_exact_repeated_pair_fraction": 0.0016300201151418464,
+      "nonblack_pair_seconds": 20432.56166666667,
+      "frame_metrics_csv": "broadway_43st.frames.csv",
+      "intervals": [
+        {
+          "start": 0.0,
+          "end": 20432.595,
+          "duration_seconds": 20432.595,
+          "status": "available_no_detected_issue",
+          "candidate_ids": []
+        }
+      ],
+      "evidence_candidates": [],
+      "confirmed_unavailable_intervals": [],
+      "uncertain_intervals": [],
+      "unflagged_intervals": [
+        [
+          0.0,
+          20432.595
+        ]
+      ],
+      "valid_source_intervals": [
+        [
+          0.0,
+          20432.595
+        ]
+      ],
+      "total_usable_seconds": 20432.595,
+      "usable_duration_definition": "Conservative unflagged duration, excluding both confirmed outages and uncertain intervals; not annotated ground truth.",
+      "eligible_seconds_excluding_confirmed_outages": 20432.595,
+      "confirmed_unavailable_seconds": 0,
+      "uncertain_seconds": 0
+    },
+    "broadway_46st_quad_south": {
+      "description": "Broadway @ 46 St - Quad South",
+      "crop": [
+        116,
+        696,
+        592,
+        356
+      ],
+      "diagnostic_roi": [
+        16,
+        16,
+        560,
+        260
+      ],
+      "frames": 28835,
+      "observable_updates": 10079,
+      "observable_update_hz": 0.49328127155209855,
+      "exact_repeated_pair_fraction": 0.0027398210446001247,
+      "near_unchanged_pair_fraction": 0.6455920094333079,
+      "strict_black_frame_fraction": 0.0,
+      "nonblack_observable_update_hz": 0.49328127155209855,
+      "nonblack_near_unchanged_pair_fraction": 0.6455920094333079,
+      "nonblack_exact_repeated_pair_fraction": 0.0027398210446001247,
+      "nonblack_pair_seconds": 20432.56166666667,
+      "frame_metrics_csv": "broadway_46st_quad_south.frames.csv",
+      "intervals": [
+        {
+          "start": 0.0,
+          "end": 20432.595,
+          "duration_seconds": 20432.595,
+          "status": "available_no_detected_issue",
+          "candidate_ids": []
+        }
+      ],
+      "evidence_candidates": [],
+      "confirmed_unavailable_intervals": [],
+      "uncertain_intervals": [],
+      "unflagged_intervals": [
+        [
+          0.0,
+          20432.595
+        ]
+      ],
+      "valid_source_intervals": [
+        [
+          0.0,
+          20432.595
+        ]
+      ],
+      "total_usable_seconds": 20432.595,
+      "usable_duration_definition": "Conservative unflagged duration, excluding both confirmed outages and uncertain intervals; not annotated ground truth.",
+      "eligible_seconds_excluding_confirmed_outages": 20432.595,
+      "confirmed_unavailable_seconds": 0,
+      "uncertain_seconds": 0
+    },
+    "5ave_34st": {
+      "description": "5 Ave @ 34 St",
+      "crop": [
+        924,
+        676,
+        592,
+        376
+      ],
+      "diagnostic_roi": [
+        16,
+        16,
+        560,
+        280
+      ],
+      "frames": 28835,
+      "observable_updates": 5658,
+      "observable_update_hz": 0.2769109469631683,
+      "exact_repeated_pair_fraction": 0.0019421516265519872,
+      "near_unchanged_pair_fraction": 0.8014149961850593,
+      "strict_black_frame_fraction": 0.0,
+      "nonblack_observable_update_hz": 0.2769109469631683,
+      "nonblack_near_unchanged_pair_fraction": 0.8014149961850593,
+      "nonblack_exact_repeated_pair_fraction": 0.0019421516265519872,
+      "nonblack_pair_seconds": 20432.56166666667,
+      "frame_metrics_csv": "5ave_34st.frames.csv",
+      "intervals": [
+        {
+          "start": 0.0,
+          "end": 4923.58,
+          "duration_seconds": 4923.58,
+          "status": "available_no_detected_issue",
+          "candidate_ids": []
+        },
+        {
+          "start": 4923.58,
+          "end": 5029.715,
+          "duration_seconds": 106.13500000000022,
+          "status": "uncertain_frozen",
+          "candidate_ids": [
+            "5ave_34st:frozen:0"
+          ]
+        },
+        {
+          "start": 5029.715,
+          "end": 20432.595,
+          "duration_seconds": 15402.880000000001,
+          "status": "available_no_detected_issue",
+          "candidate_ids": []
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "start": 4923.58,
+          "end": 5029.715,
+          "duration": 106.13500000000022,
+          "status": "uncertain_frozen",
+          "candidate_id": "5ave_34st:frozen:0"
+        }
+      ],
+      "confirmed_unavailable_intervals": [],
+      "uncertain_intervals": [
+        [
+          4923.58,
+          5029.715
+        ]
+      ],
+      "unflagged_intervals": [
+        [
+          0.0,
+          4923.58
+        ],
+        [
+          5029.715,
+          20432.595
+        ]
+      ],
+      "valid_source_intervals": [
+        [
+          0.0,
+          20432.595
+        ]
+      ],
+      "total_usable_seconds": 20326.46,
+      "usable_duration_definition": "Conservative unflagged duration, excluding both confirmed outages and uncertain intervals; not annotated ground truth.",
+      "eligible_seconds_excluding_confirmed_outages": 20432.595,
+      "confirmed_unavailable_seconds": 0,
+      "uncertain_seconds": 106.13500000000022
+    },
+    "7ave_43st_ptz": {
+      "description": "7 Ave @ 43 St - 64.186 - PTZ",
+      "crop": [
+        1732,
+        676,
+        592,
+        376
+      ],
+      "diagnostic_roi": [
+        16,
+        16,
+        560,
+        280
+      ],
+      "frames": 28835,
+      "observable_updates": 7,
+      "observable_update_hz": 0.00034259042572325524,
+      "exact_repeated_pair_fraction": 0.9977110355829923,
+      "near_unchanged_pair_fraction": 0.9993410556981341,
+      "strict_black_frame_fraction": 0.9977804751170453,
+      "nonblack_observable_update_hz": 0.3415559772296109,
+      "nonblack_near_unchanged_pair_fraction": 0.7419354838709677,
+      "nonblack_exact_repeated_pair_fraction": 0.016129032258064516,
+      "nonblack_pair_seconds": 17.566666666666183,
+      "frame_metrics_csv": "7ave_43st_ptz.frames.csv",
+      "intervals": [
+        {
+          "start": 0.0,
+          "end": 17.583333333333332,
+          "duration_seconds": 17.583333333333332,
+          "status": "available_no_detected_issue",
+          "candidate_ids": []
+        },
+        {
+          "start": 17.583333333333332,
+          "end": 17817.333333333332,
+          "duration_seconds": 17799.75,
+          "status": "confirmed_unavailable_black",
+          "candidate_ids": [
+            "7ave_43st_ptz:black:0"
+          ]
+        },
+        {
+          "start": 17817.333333333332,
+          "end": 17817.383333333335,
+          "duration_seconds": 0.05000000000291038,
+          "status": "confirmed_unavailable_black",
+          "candidate_ids": [
+            "7ave_43st_ptz:manual:cursor_overlay"
+          ]
+        },
+        {
+          "start": 17817.383333333335,
+          "end": 20432.595,
+          "duration_seconds": 2615.211666666666,
+          "status": "confirmed_unavailable_black",
+          "candidate_ids": [
+            "7ave_43st_ptz:black:1"
+          ]
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "start": 17.583333333333332,
+          "end": 17817.333333333332,
+          "duration": 17799.75,
+          "status": "confirmed_unavailable_black",
+          "candidate_id": "7ave_43st_ptz:black:0",
+          "evidence": {
+            "decision": "confirm_black_outage",
+            "reviewer": "assistant visual review of original cropped snapshots",
+            "evidence": [
+              {
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_0_0.png",
+                "source_seconds": 17.6,
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "16.600000000",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=17.599999999000,crop=592:376:1732:676:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              },
+              {
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_0_1.png",
+                "source_seconds": 8618.176666666666,
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "8617.176666667",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=8618.176666665666,crop=592:376:1732:676:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              },
+              {
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_0_2.png",
+                "source_seconds": 17817.316666666666,
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "17816.316666667",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=17817.316666665665,crop=592:376:1732:676:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              }
+            ],
+            "reason": "Camera image is black with persistent DOT mark. Corresponding interior analysis ROI is flat black. Reviewed beginning, middle and end."
+          }
+        },
+        {
+          "start": 17817.383333333335,
+          "end": 20432.595,
+          "duration": 2615.211666666666,
+          "status": "confirmed_unavailable_black",
+          "candidate_id": "7ave_43st_ptz:black:1",
+          "evidence": {
+            "decision": "confirm_black_outage",
+            "reviewer": "assistant visual review of original cropped snapshots",
+            "evidence": [
+              {
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_1_0.png",
+                "source_seconds": 17817.383333333335,
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "17816.383333333",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=17817.383333332335,crop=592:376:1732:676:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              },
+              {
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_1_1.png",
+                "source_seconds": 19110.963333333333,
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "19109.963333333",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=19110.963333332333,crop=592:376:1732:676:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              },
+              {
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_43st_ptz_black_1_2.png",
+                "source_seconds": 20432.56166666667,
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "20431.561666667",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=20432.561666665668,crop=592:376:1732:676:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              }
+            ],
+            "reason": "Camera image is black with persistent DOT mark. Corresponding interior analysis ROI is flat black. Reviewed beginning, middle and end."
+          }
+        },
+        {
+          "start": 17817.333333333332,
+          "end": 17817.383333333335,
+          "duration": 0.05000000000291038,
+          "status": "confirmed_unavailable_black",
+          "candidate_id": "7ave_43st_ptz:manual:cursor_overlay",
+          "evidence": {
+            "decision": "confirm_black_outage",
+            "start": 17817.333333333332,
+            "end": 17817.383333333335,
+            "reviewer": "assistant visual review",
+            "evidence": "data/metadata/nyc_traffic/availability_scan_v1/review/7ave_transient_nonblack.png",
+            "reason": "Pointer over a black player; no camera scene returned. This bridges the detector false recovery."
+          }
+        }
+      ],
+      "confirmed_unavailable_intervals": [
+        [
+          17.583333333333332,
+          20432.595
+        ]
+      ],
+      "uncertain_intervals": [],
+      "unflagged_intervals": [
+        [
+          0.0,
+          17.583333333333332
+        ]
+      ],
+      "valid_source_intervals": [
+        [
+          0.0,
+          17.583333333333332
+        ]
+      ],
+      "total_usable_seconds": 17.583333333333332,
+      "usable_duration_definition": "Conservative unflagged duration, excluding both confirmed outages and uncertain intervals; not annotated ground truth.",
+      "eligible_seconds_excluding_confirmed_outages": 17.583333333333332,
+      "confirmed_unavailable_seconds": 20415.01166666667,
+      "uncertain_seconds": 0
+    },
+    "central_park_72nd_post37": {
+      "description": "Central Park @ 72nd St Post 37",
+      "crop": [
+        116,
+        1132,
+        592,
+        406
+      ],
+      "diagnostic_roi": [
+        16,
+        16,
+        560,
+        310
+      ],
+      "frames": 28835,
+      "observable_updates": 6106,
+      "observable_update_hz": 0.29883673420945667,
+      "exact_repeated_pair_fraction": 0.009294582784213083,
+      "near_unchanged_pair_fraction": 0.6588055767496706,
+      "strict_black_frame_fraction": 0.0,
+      "nonblack_observable_update_hz": 0.29883673420945667,
+      "nonblack_near_unchanged_pair_fraction": 0.6588055767496706,
+      "nonblack_exact_repeated_pair_fraction": 0.009294582784213083,
+      "nonblack_pair_seconds": 20432.56166666667,
+      "frame_metrics_csv": "central_park_72nd_post37.frames.csv",
+      "intervals": [
+        {
+          "start": 0.0,
+          "end": 9172.871666666666,
+          "duration_seconds": 9172.871666666666,
+          "status": "available_no_detected_issue",
+          "candidate_ids": []
+        },
+        {
+          "start": 9172.871666666666,
+          "end": 9289.025,
+          "duration_seconds": 116.15333333333365,
+          "status": "uncertain_frozen",
+          "candidate_ids": [
+            "central_park_72nd_post37:frozen:0"
+          ]
+        },
+        {
+          "start": 9289.025,
+          "end": 9459.245,
+          "duration_seconds": 170.22000000000116,
+          "status": "confirmed_unavailable_service",
+          "candidate_ids": [
+            "central_park_72nd_post37:frozen:1",
+            "central_park_72nd_post37:manual:service_card"
+          ]
+        },
+        {
+          "start": 9459.245,
+          "end": 20432.595,
+          "duration_seconds": 10973.35,
+          "status": "available_no_detected_issue",
+          "candidate_ids": []
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "start": 9289.025,
+          "end": 9459.245,
+          "duration": 170.22000000000116,
+          "status": "confirmed_unavailable_service",
+          "candidate_id": "central_park_72nd_post37:manual:service_card",
+          "evidence": {
+            "decision": "confirm_service_unavailable",
+            "start": 9289.025,
+            "end": 9459.245,
+            "reviewer": "assistant visual review of source snapshots",
+            "reason": "Explicit This camera is being serviced card; reviewed immediately preceding scene, first/middle/last card frames, and recovered scene.",
+            "evidence": [
+              {
+                "source_seconds": 9289.008333333333,
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/service_review/service_0.png",
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "9288.008333333",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=9289.008333332333,crop=592:406:116:1132:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              },
+              {
+                "source_seconds": 9289.025,
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/service_review/service_1.png",
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "9288.025000000",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=9289.024999998999,crop=592:406:116:1132:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              },
+              {
+                "source_seconds": 9375.193333333333,
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/service_review/service_2.png",
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "9374.193333333",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=9375.193333332332,crop=592:406:116:1132:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              },
+              {
+                "source_seconds": 9459.195,
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/service_review/service_3.png",
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "9458.195000000",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=9459.194999998999,crop=592:406:116:1132:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              },
+              {
+                "source_seconds": 9459.245,
+                "path": "data/metadata/nyc_traffic/availability_scan_v1/service_review/service_4.png",
+                "command": [
+                  "ffmpeg",
+                  "-hide_banner",
+                  "-nostdin",
+                  "-nostats",
+                  "-n",
+                  "-copyts",
+                  "-start_at_zero",
+                  "-ss",
+                  "9458.245000000",
+                  "-noautorotate",
+                  "-i",
+                  "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+                  "-map",
+                  "0:v:0",
+                  "-an",
+                  "-sn",
+                  "-dn",
+                  "-loglevel",
+                  "error",
+                  "-vf",
+                  "trim=start=9459.244999999000,crop=592:406:116:1132:exact=1",
+                  "-frames:v",
+                  "1",
+                  "-f",
+                  "image2pipe",
+                  "-c:v",
+                  "png",
+                  "pipe:1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "start": 9172.871666666666,
+          "end": 9289.025,
+          "duration": 116.15333333333365,
+          "status": "uncertain_frozen",
+          "candidate_id": "central_park_72nd_post37:frozen:0"
+        },
+        {
+          "start": 9289.025,
+          "end": 9459.245,
+          "duration": 170.22000000000116,
+          "status": "uncertain_frozen",
+          "candidate_id": "central_park_72nd_post37:frozen:1"
+        }
+      ],
+      "confirmed_unavailable_intervals": [
+        [
+          9289.025,
+          9459.245
+        ]
+      ],
+      "uncertain_intervals": [
+        [
+          9172.871666666666,
+          9289.025
+        ]
+      ],
+      "unflagged_intervals": [
+        [
+          0.0,
+          9172.871666666666
+        ],
+        [
+          9459.245,
+          20432.595
+        ]
+      ],
+      "valid_source_intervals": [
+        [
+          0.0,
+          9289.025
+        ],
+        [
+          9459.245,
+          20432.595
+        ]
+      ],
+      "total_usable_seconds": 20146.221666666665,
+      "usable_duration_definition": "Conservative unflagged duration, excluding both confirmed outages and uncertain intervals; not annotated ground truth.",
+      "eligible_seconds_excluding_confirmed_outages": 20262.375,
+      "confirmed_unavailable_seconds": 170.22000000000116,
+      "uncertain_seconds": 116.15333333333365
+    }
+  },
+  "limitations": [
+    "A frame class holds until the next stored presentation time.",
+    "Actual network failure/recovery can occur between observations.",
+    "Unflagged imagery is not a ground-truth guarantee of availability.",
+    "Frozen/blank/dark candidates are preserved for manual review."
+  ],
+  "analysis_path": "/Users/anguscheng/Downloads/video-search-baseline/data/metadata/nyc_traffic/availability_scan_v1/scan.json",
+  "analysis_sha256": "a7120b8fa87c6bcd9492cf29f9722f6684ccb3f7f30ed57ef2bf9bbd523d439e",
+  "decisions_path": "/Users/anguscheng/Downloads/video-search-baseline/data/metadata/nyc_traffic/availability_scan_v1/review/review_decisions_v2.json",
+  "decisions_sha256": "4ec598a960be721acc66aaa3c6afc361f8f7fe2c8ca2d79adb08d7ca3f2598da"
+}

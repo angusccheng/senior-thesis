@@ -1,0 +1,264 @@
+{
+  "analysis_resolution": [
+    80,
+    48
+  ],
+  "thresholds": {
+    "strict_black": "mean<=4,std<=1.5,>=99.9% pixels<=12",
+    "blank": "std<=2, not strict black",
+    "observable_update": "MAD>=2 and >=1% pixels change by >=8",
+    "near_unchanged": "MAD<=0.15 and <=0.1% pixels change by >=8",
+    "freeze_review_min_seconds": 90,
+    "black_confirmation_min_seconds": 10
+  },
+  "stored_frame_count": 28835,
+  "stored_fps": 1.4111789050434775,
+  "notes": "Pair counts/fractions are frame-pair weighted; Hz divides events by eligible inter-frame elapsed time. These are visible-change proxies, not camera/network FPS. Confirmed outages excluded only in eligible_nonoutage; frozen candidates remain flagged.",
+  "cameras": {
+    "5ave_57st": {
+      "full_recording": {
+        "pairs": 28834,
+        "updates": 1386,
+        "exact_duplicates": 24830,
+        "near_unchanged": 27437,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.06783290429320454,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.8611361587015329,
+        "near_unchanged_pair_fraction": 0.9515502531733371
+      },
+      "eligible_nonoutage": {
+        "pairs": 4017,
+        "updates": 1385,
+        "exact_duplicates": 14,
+        "near_unchanged": 2621,
+        "pair_seconds": 2800.918333333334,
+        "observable_change_hz": 0.49448067925341144,
+        "stored_pair_rate": 1.43417248271549,
+        "exact_duplicate_pair_fraction": 0.0034851879512073688,
+        "near_unchanged_pair_fraction": 0.6524769728653224
+      },
+      "development_300_900": {
+        "pairs": 842,
+        "updates": 291,
+        "exact_duplicates": 3,
+        "near_unchanged": 545,
+        "pair_seconds": 596.793333333334,
+        "observable_change_hz": 0.48760598308738873,
+        "stored_pair_rate": 1.4108736692769117,
+        "exact_duplicate_pair_fraction": 0.0035629453681710215,
+        "near_unchanged_pair_fraction": 0.6472684085510689
+      }
+    },
+    "central_park_west_72st": {
+      "full_recording": {
+        "pairs": 28834,
+        "updates": 6864,
+        "exact_duplicates": 120,
+        "near_unchanged": 18696,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.33593438316634633,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.0041617534854685445,
+        "near_unchanged_pair_fraction": 0.6484011930359992
+      },
+      "eligible_nonoutage": {
+        "pairs": 28834,
+        "updates": 6864,
+        "exact_duplicates": 120,
+        "near_unchanged": 18696,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.33593438316634633,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.0041617534854685445,
+        "near_unchanged_pair_fraction": 0.6484011930359992
+      },
+      "development_300_900": {
+        "pairs": 842,
+        "updates": 297,
+        "exact_duplicates": 1,
+        "near_unchanged": 545,
+        "pair_seconds": 596.793333333334,
+        "observable_change_hz": 0.49765971469743797,
+        "stored_pair_rate": 1.4108736692769117,
+        "exact_duplicate_pair_fraction": 0.0011876484560570072,
+        "near_unchanged_pair_fraction": 0.6472684085510689
+      }
+    },
+    "broadway_43st": {
+      "full_recording": {
+        "pairs": 28834,
+        "updates": 9997,
+        "exact_duplicates": 47,
+        "near_unchanged": 18763,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.4892680694221975,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.0016300201151418464,
+        "near_unchanged_pair_fraction": 0.6507248387320524
+      },
+      "eligible_nonoutage": {
+        "pairs": 28834,
+        "updates": 9997,
+        "exact_duplicates": 47,
+        "near_unchanged": 18763,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.4892680694221975,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.0016300201151418464,
+        "near_unchanged_pair_fraction": 0.6507248387320524
+      },
+      "development_300_900": {
+        "pairs": 842,
+        "updates": 289,
+        "exact_duplicates": 1,
+        "near_unchanged": 550,
+        "pair_seconds": 596.793333333334,
+        "observable_change_hz": 0.48425473921737233,
+        "stored_pair_rate": 1.4108736692769117,
+        "exact_duplicate_pair_fraction": 0.0011876484560570072,
+        "near_unchanged_pair_fraction": 0.6532066508313539
+      }
+    },
+    "broadway_46st_quad_south": {
+      "full_recording": {
+        "pairs": 28834,
+        "updates": 10079,
+        "exact_duplicates": 79,
+        "near_unchanged": 18615,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.49328127155209855,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.0027398210446001247,
+        "near_unchanged_pair_fraction": 0.6455920094333079
+      },
+      "eligible_nonoutage": {
+        "pairs": 28834,
+        "updates": 10079,
+        "exact_duplicates": 79,
+        "near_unchanged": 18615,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.49328127155209855,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.0027398210446001247,
+        "near_unchanged_pair_fraction": 0.6455920094333079
+      },
+      "development_300_900": {
+        "pairs": 842,
+        "updates": 297,
+        "exact_duplicates": 2,
+        "near_unchanged": 541,
+        "pair_seconds": 596.793333333334,
+        "observable_change_hz": 0.49765971469743797,
+        "stored_pair_rate": 1.4108736692769117,
+        "exact_duplicate_pair_fraction": 0.0023752969121140144,
+        "near_unchanged_pair_fraction": 0.6425178147268409
+      }
+    },
+    "5ave_34st": {
+      "full_recording": {
+        "pairs": 28834,
+        "updates": 5658,
+        "exact_duplicates": 56,
+        "near_unchanged": 23108,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.2769109469631683,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.0019421516265519872,
+        "near_unchanged_pair_fraction": 0.8014149961850593
+      },
+      "eligible_nonoutage": {
+        "pairs": 28834,
+        "updates": 5658,
+        "exact_duplicates": 56,
+        "near_unchanged": 23108,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.2769109469631683,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.0019421516265519872,
+        "near_unchanged_pair_fraction": 0.8014149961850593
+      },
+      "development_300_900": {
+        "pairs": 842,
+        "updates": 128,
+        "exact_duplicates": 1,
+        "near_unchanged": 713,
+        "pair_seconds": 596.793333333334,
+        "observable_change_hz": 0.21447960768105073,
+        "stored_pair_rate": 1.4108736692769117,
+        "exact_duplicate_pair_fraction": 0.0011876484560570072,
+        "near_unchanged_pair_fraction": 0.8467933491686461
+      }
+    },
+    "7ave_43st_ptz": {
+      "full_recording": {
+        "pairs": 28834,
+        "updates": 7,
+        "exact_duplicates": 28768,
+        "near_unchanged": 28815,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.00034259042572325524,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.9977110355829923,
+        "near_unchanged_pair_fraction": 0.9993410556981341
+      },
+      "eligible_nonoutage": {
+        "pairs": 60,
+        "updates": 6,
+        "exact_duplicates": 1,
+        "near_unchanged": 46,
+        "pair_seconds": 17.533333333333,
+        "observable_change_hz": 0.34220532319392283,
+        "stored_pair_rate": 3.4220532319392283,
+        "exact_duplicate_pair_fraction": 0.016666666666666666,
+        "near_unchanged_pair_fraction": 0.7666666666666667
+      },
+      "development_300_900": {
+        "pairs": 842,
+        "updates": 0,
+        "exact_duplicates": 842,
+        "near_unchanged": 842,
+        "pair_seconds": 596.793333333334,
+        "observable_change_hz": 0.0,
+        "stored_pair_rate": 1.4108736692769117,
+        "exact_duplicate_pair_fraction": 1.0,
+        "near_unchanged_pair_fraction": 1.0
+      }
+    },
+    "central_park_72nd_post37": {
+      "full_recording": {
+        "pairs": 28834,
+        "updates": 6106,
+        "exact_duplicates": 268,
+        "near_unchanged": 18996,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.29883673420945667,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.009294582784213083,
+        "near_unchanged_pair_fraction": 0.6588055767496706
+      },
+      "eligible_nonoutage": {
+        "pairs": 28834,
+        "updates": 6106,
+        "exact_duplicates": 268,
+        "near_unchanged": 18996,
+        "pair_seconds": 20432.56166666667,
+        "observable_change_hz": 0.29883673420945667,
+        "stored_pair_rate": 1.4111789050434775,
+        "exact_duplicate_pair_fraction": 0.009294582784213083,
+        "near_unchanged_pair_fraction": 0.6588055767496706
+      },
+      "development_300_900": {
+        "pairs": 842,
+        "updates": 253,
+        "exact_duplicates": 4,
+        "near_unchanged": 551,
+        "pair_seconds": 596.793333333334,
+        "observable_change_hz": 0.4239323495570768,
+        "stored_pair_rate": 1.4108736692769117,
+        "exact_duplicate_pair_fraction": 0.004750593824228029,
+        "near_unchanged_pair_fraction": 0.6543942992874109
+      }
+    }
+  }
+}

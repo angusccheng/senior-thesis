@@ -1,0 +1,17 @@
+{
+  "queries": [
+    {
+      "id": "q1",
+      "text": "Pedestrians crossing a wide crosswalk at a busy city intersection."
+    },
+    {
+      "id": "q2",
+      "text": "Yellow taxis driving through an intersection."
+    },
+    {
+      "id": "q3",
+      "text": "A bus passing through a crowded intersection."
+    }
+  ],
+  "ground_truth": null
+}

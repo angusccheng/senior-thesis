@@ -1,0 +1,56 @@
+{
+  "frames": [
+    {
+      "seconds": 280.338333
+    },
+    {
+      "seconds": 286.338333
+    },
+    {
+      "seconds": 290.371667
+    },
+    {
+      "seconds": 296.35499999999996
+    },
+    {
+      "seconds": 300.35499999999996
+    },
+    {
+      "seconds": 306.35499999999996
+    },
+    {
+      "seconds": 310.405
+    },
+    {
+      "seconds": 316.371667
+    },
+    {
+      "seconds": 320.371667
+    },
+    {
+      "seconds": 326.371667
+    },
+    {
+      "seconds": 330.388333
+    },
+    {
+      "seconds": 336.405
+    },
+    {
+      "seconds": 340.42166699999996
+    },
+    {
+      "seconds": 346.405
+    },
+    {
+      "seconds": 350.405
+    },
+    {
+      "seconds": 356.438333
+    },
+    {
+      "seconds": 360.42166699999996
+    }
+  ],
+  "review_purpose": "Inspect event boundaries independently of retrieval scores; provisional manual visual review."
+}
