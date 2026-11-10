@@ -16,7 +16,7 @@ The supplied file is accessible:
 ```
 
 The space before `PM` is U+202F (narrow no-break space). The exact path is already
-stored in [configs/nyc_traffic.json](../configs/nyc_traffic.json), so downstream commands
+stored in [configs/nyc_traffic.json](../../configs/nyc_traffic.json), so downstream commands
 do not need to type it again. The source is read-only throughout this workflow.
 
 | Source property | Observed value |
@@ -66,24 +66,24 @@ invalid/out-of-bounds crops fail rather than silently rounding.
 | `7ave_43st_ptz` | 7 Ave @ 43 St - 64.186 - PTZ | `[1732, 676, 592, 376]` |
 | `central_park_72nd_post37` | Central Park @ 72nd St Post 37 | `[116, 1132, 592, 406]` |
 
-Start with the [sample review sheet](../output/nyc_traffic/smoke_30_60/review/contact_sheet.jpg).
+Start with the [sample review sheet](../../archive/legacy_output/nyc_traffic/smoke_30_60/review/contact_sheet.jpg).
 Then open the independent MP4s:
 
-- [5 Ave @ 57 St](../output/nyc_traffic/smoke_30_60/5ave_57st.mp4)
-- [Central Park West @ 72 St](../output/nyc_traffic/smoke_30_60/central_park_west_72st.mp4)
-- [Broadway @ 43 St](../output/nyc_traffic/smoke_30_60/broadway_43st.mp4)
-- [Broadway @ 46 St](../output/nyc_traffic/smoke_30_60/broadway_46st_quad_south.mp4)
-- [5 Ave @ 34 St](../output/nyc_traffic/smoke_30_60/5ave_34st.mp4)
-- [7 Ave @ 43 St](../output/nyc_traffic/smoke_30_60/7ave_43st_ptz.mp4)
-- [Central Park @ 72nd St Post 37](../output/nyc_traffic/smoke_30_60/central_park_72nd_post37.mp4)
+- [5 Ave @ 57 St](../../archive/legacy_output/nyc_traffic/smoke_30_60/5ave_57st.mp4)
+- [Central Park West @ 72 St](../../archive/legacy_output/nyc_traffic/smoke_30_60/central_park_west_72st.mp4)
+- [Broadway @ 43 St](../../archive/legacy_output/nyc_traffic/smoke_30_60/broadway_43st.mp4)
+- [Broadway @ 46 St](../../archive/legacy_output/nyc_traffic/smoke_30_60/broadway_46st_quad_south.mp4)
+- [5 Ave @ 34 St](../../archive/legacy_output/nyc_traffic/smoke_30_60/5ave_34st.mp4)
+- [7 Ave @ 43 St](../../archive/legacy_output/nyc_traffic/smoke_30_60/7ave_43st_ptz.mp4)
+- [Central Park @ 72nd St Post 37](../../archive/legacy_output/nyc_traffic/smoke_30_60/central_park_72nd_post37.mp4)
 
 Additional inspection artifacts:
 
-- [Full source frame at approximately 30 s](../output/nyc_traffic/crop_review_30s/source.png)
-- [Coordinates/crop outlines at approximately 30 s](../output/nyc_traffic/crop_review_30s/coordinates.png)
-- [Full source frame at approximately four hours](../output/nyc_traffic/crop_review_4h/source.png)
-- [Export manifest, exact FFmpeg commands and output hashes](../output/nyc_traffic/smoke_30_60/manifest.json)
-- [Pixel/timestamp verification evidence](../output/nyc_traffic/smoke_30_60/review/verification.json)
+- [Full source frame at approximately 30 s](../../archive/legacy_output/nyc_traffic/crop_review_30s/source.png)
+- [Coordinates/crop outlines at approximately 30 s](../../archive/legacy_output/nyc_traffic/crop_review_30s/coordinates.png)
+- [Full source frame at approximately four hours](../../archive/legacy_output/nyc_traffic/crop_review_4h/source.png)
+- [Export manifest, exact FFmpeg commands and output hashes](../../archive/legacy_output/nyc_traffic/smoke_30_60/manifest.json)
+- [Pixel/timestamp verification evidence](../../archive/legacy_output/nyc_traffic/smoke_30_60/review/verification.json)
 
 The preview command records the requested time; its PNG is the first decodable
 frame at/after that time. Use the export mapping CSV for precise timestamps.

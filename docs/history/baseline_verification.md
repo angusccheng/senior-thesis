@@ -4,7 +4,7 @@ Result: **PASS**. 64/64 audit checks passed; 0 failed. The separate offline unit
 
 This is an executed backend verification using the existing real `data/sample.mp4`. No synthetic fallback was needed. No new selection method or frontend was added. The backend is ready for an adviser demonstration and development of a controlled evaluation; retrieval accuracy on annotated videos has not been established.
 
-Machine-readable evidence, all child-process commands, stdout/stderr, and individual assertions: [output/verification_2026-10-27/verification.json](../output/verification_2026-10-27/verification.json).
+Machine-readable evidence, all child-process commands, stdout/stderr, and individual assertions: [output/verification_2026-10-27/verification.json](../../archive/legacy_output/verification_2026-10-27/verification.json).
 
 ## Video, configuration and performance
 
@@ -68,39 +68,39 @@ Scores below are rounded to nine decimal places for reading; JSON/CSV retain ful
 
 ### Query 1: cars driving on a road beside trees
 
-Fresh-process wall time: 5.177937 s. [CSV](../output/verification_2026-10-27/query_01/results.csv), [JSON](../output/verification_2026-10-27/query_01/results.json).
+Fresh-process wall time: 5.177937 s. [CSV](../../archive/legacy_output/verification_2026-10-27/query_01/results.csv), [JSON](../../archive/legacy_output/verification_2026-10-27/query_01/results.json).
 
 | Rank | Timestamp | Frame | Cosine similarity | Saved image |
 | --- | --- | --- | --- | --- |
-| 1 | 00:00:05.000 | 150 | 0.259984106 | [output/verification_2026-10-27/query_01/rank_01_frame_00000150.jpg](../output/verification_2026-10-27/query_01/rank_01_frame_00000150.jpg) |
-| 2 | 00:00:03.000 | 90 | 0.233552396 | [output/verification_2026-10-27/query_01/rank_02_frame_00000090.jpg](../output/verification_2026-10-27/query_01/rank_02_frame_00000090.jpg) |
-| 3 | 00:00:04.000 | 120 | 0.233262464 | [output/verification_2026-10-27/query_01/rank_03_frame_00000120.jpg](../output/verification_2026-10-27/query_01/rank_03_frame_00000120.jpg) |
-| 4 | 00:00:02.000 | 60 | 0.232159317 | [output/verification_2026-10-27/query_01/rank_04_frame_00000060.jpg](../output/verification_2026-10-27/query_01/rank_04_frame_00000060.jpg) |
-| 5 | 00:00:00.000 | 0 | 0.214712381 | [output/verification_2026-10-27/query_01/rank_05_frame_00000000.jpg](../output/verification_2026-10-27/query_01/rank_05_frame_00000000.jpg) |
+| 1 | 00:00:05.000 | 150 | 0.259984106 | [output/verification_2026-10-27/query_01/rank_01_frame_00000150.jpg](../../archive/legacy_output/verification_2026-10-27/query_01/rank_01_frame_00000150.jpg) |
+| 2 | 00:00:03.000 | 90 | 0.233552396 | [output/verification_2026-10-27/query_01/rank_02_frame_00000090.jpg](../../archive/legacy_output/verification_2026-10-27/query_01/rank_02_frame_00000090.jpg) |
+| 3 | 00:00:04.000 | 120 | 0.233262464 | [output/verification_2026-10-27/query_01/rank_03_frame_00000120.jpg](../../archive/legacy_output/verification_2026-10-27/query_01/rank_03_frame_00000120.jpg) |
+| 4 | 00:00:02.000 | 60 | 0.232159317 | [output/verification_2026-10-27/query_01/rank_04_frame_00000060.jpg](../../archive/legacy_output/verification_2026-10-27/query_01/rank_04_frame_00000060.jpg) |
+| 5 | 00:00:00.000 | 0 | 0.214712381 | [output/verification_2026-10-27/query_01/rank_05_frame_00000000.jpg](../../archive/legacy_output/verification_2026-10-27/query_01/rank_05_frame_00000000.jpg) |
 
 ### Query 2: a park with green trees and a walking path
 
-Fresh-process wall time: 5.548220 s. [CSV](../output/verification_2026-10-27/query_02/results.csv), [JSON](../output/verification_2026-10-27/query_02/results.json).
+Fresh-process wall time: 5.548220 s. [CSV](../../archive/legacy_output/verification_2026-10-27/query_02/results.csv), [JSON](../../archive/legacy_output/verification_2026-10-27/query_02/results.json).
 
 | Rank | Timestamp | Frame | Cosine similarity | Saved image |
 | --- | --- | --- | --- | --- |
-| 1 | 00:00:02.000 | 60 | 0.306828260 | [output/verification_2026-10-27/query_02/rank_01_frame_00000060.jpg](../output/verification_2026-10-27/query_02/rank_01_frame_00000060.jpg) |
-| 2 | 00:00:00.000 | 0 | 0.305544078 | [output/verification_2026-10-27/query_02/rank_02_frame_00000000.jpg](../output/verification_2026-10-27/query_02/rank_02_frame_00000000.jpg) |
-| 3 | 00:00:01.000 | 30 | 0.304860353 | [output/verification_2026-10-27/query_02/rank_03_frame_00000030.jpg](../output/verification_2026-10-27/query_02/rank_03_frame_00000030.jpg) |
-| 4 | 00:00:04.000 | 120 | 0.304277837 | [output/verification_2026-10-27/query_02/rank_04_frame_00000120.jpg](../output/verification_2026-10-27/query_02/rank_04_frame_00000120.jpg) |
-| 5 | 00:00:05.000 | 150 | 0.300197899 | [output/verification_2026-10-27/query_02/rank_05_frame_00000150.jpg](../output/verification_2026-10-27/query_02/rank_05_frame_00000150.jpg) |
+| 1 | 00:00:02.000 | 60 | 0.306828260 | [output/verification_2026-10-27/query_02/rank_01_frame_00000060.jpg](../../archive/legacy_output/verification_2026-10-27/query_02/rank_01_frame_00000060.jpg) |
+| 2 | 00:00:00.000 | 0 | 0.305544078 | [output/verification_2026-10-27/query_02/rank_02_frame_00000000.jpg](../../archive/legacy_output/verification_2026-10-27/query_02/rank_02_frame_00000000.jpg) |
+| 3 | 00:00:01.000 | 30 | 0.304860353 | [output/verification_2026-10-27/query_02/rank_03_frame_00000030.jpg](../../archive/legacy_output/verification_2026-10-27/query_02/rank_03_frame_00000030.jpg) |
+| 4 | 00:00:04.000 | 120 | 0.304277837 | [output/verification_2026-10-27/query_02/rank_04_frame_00000120.jpg](../../archive/legacy_output/verification_2026-10-27/query_02/rank_04_frame_00000120.jpg) |
+| 5 | 00:00:05.000 | 150 | 0.300197899 | [output/verification_2026-10-27/query_02/rank_05_frame_00000150.jpg](../../archive/legacy_output/verification_2026-10-27/query_02/rank_05_frame_00000150.jpg) |
 
 ### Query 3: a person cooking food in a kitchen
 
-Fresh-process wall time: 5.898627 s. [CSV](../output/verification_2026-10-27/query_03/results.csv), [JSON](../output/verification_2026-10-27/query_03/results.json).
+Fresh-process wall time: 5.898627 s. [CSV](../../archive/legacy_output/verification_2026-10-27/query_03/results.csv), [JSON](../../archive/legacy_output/verification_2026-10-27/query_03/results.json).
 
 | Rank | Timestamp | Frame | Cosine similarity | Saved image |
 | --- | --- | --- | --- | --- |
-| 1 | 00:00:03.000 | 90 | 0.083129257 | [output/verification_2026-10-27/query_03/rank_01_frame_00000090.jpg](../output/verification_2026-10-27/query_03/rank_01_frame_00000090.jpg) |
-| 2 | 00:00:01.000 | 30 | 0.072480023 | [output/verification_2026-10-27/query_03/rank_02_frame_00000030.jpg](../output/verification_2026-10-27/query_03/rank_02_frame_00000030.jpg) |
-| 3 | 00:00:05.000 | 150 | 0.070627153 | [output/verification_2026-10-27/query_03/rank_03_frame_00000150.jpg](../output/verification_2026-10-27/query_03/rank_03_frame_00000150.jpg) |
-| 4 | 00:00:02.000 | 60 | 0.064901829 | [output/verification_2026-10-27/query_03/rank_04_frame_00000060.jpg](../output/verification_2026-10-27/query_03/rank_04_frame_00000060.jpg) |
-| 5 | 00:00:04.000 | 120 | 0.062979780 | [output/verification_2026-10-27/query_03/rank_05_frame_00000120.jpg](../output/verification_2026-10-27/query_03/rank_05_frame_00000120.jpg) |
+| 1 | 00:00:03.000 | 90 | 0.083129257 | [output/verification_2026-10-27/query_03/rank_01_frame_00000090.jpg](../../archive/legacy_output/verification_2026-10-27/query_03/rank_01_frame_00000090.jpg) |
+| 2 | 00:00:01.000 | 30 | 0.072480023 | [output/verification_2026-10-27/query_03/rank_02_frame_00000030.jpg](../../archive/legacy_output/verification_2026-10-27/query_03/rank_02_frame_00000030.jpg) |
+| 3 | 00:00:05.000 | 150 | 0.070627153 | [output/verification_2026-10-27/query_03/rank_03_frame_00000150.jpg](../../archive/legacy_output/verification_2026-10-27/query_03/rank_03_frame_00000150.jpg) |
+| 4 | 00:00:02.000 | 60 | 0.064901829 | [output/verification_2026-10-27/query_03/rank_04_frame_00000060.jpg](../../archive/legacy_output/verification_2026-10-27/query_03/rank_04_frame_00000060.jpg) |
+| 5 | 00:00:04.000 | 120 | 0.062979780 | [output/verification_2026-10-27/query_03/rank_05_frame_00000120.jpg](../../archive/legacy_output/verification_2026-10-27/query_03/rank_05_frame_00000120.jpg) |
 
 Query 3 is an intentionally unrelated distractor. A kitchen query still returns five park/street frames because this baseline always ranks available candidates and has no abstention threshold. Its lower scores are not calibrated probabilities, and this example does not establish a general threshold for irrelevant queries.
 

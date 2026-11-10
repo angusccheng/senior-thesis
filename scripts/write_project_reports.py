@@ -248,8 +248,8 @@ def render(experiment,availability,report_dir):
     for row in inventory['records']:
         if row['action']=='move':lines.append(f"| `{row['old']}` | `{row['new']}` |")
     lines+=['| Entire `output/` tree | `archive/legacy_output/`, with `output/` compatibility symlink |',
-        '| Original detailed README | `docs/BASELINE_USAGE.md` plus pre-cleanup snapshot |',
-        '| Original preparation narrative | `docs/DATA_PREPARATION_LEGACY.md` plus pre-cleanup snapshot |','',
+        '| Original detailed README | `docs/history/BASELINE_USAGE.md` plus pre-cleanup snapshot |',
+        '| Original preparation narrative | `docs/history/DATA_PREPARATION_LEGACY.md` plus pre-cleanup snapshot |','',
         'The current root README is concise. Detailed instructions and newly generated dataset '
         'reports live in docs/. Relative report links were rebased. Root CLI entry points and '
         'existing explicit paths still work. Source modules use relative package imports; '

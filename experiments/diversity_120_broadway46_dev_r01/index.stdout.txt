@@ -1,0 +1,3 @@
+Loading OpenCLIP (first run downloads weights)...
+Indexed 120 frames; payload 248,640 bytes; archive 286,178 bytes
+Saved indexes/diversity_120_broadway46_dev_r01/index.npz and indexes/diversity_120_broadway46_dev_r01/index.metadata.json

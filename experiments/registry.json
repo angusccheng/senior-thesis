@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "active_experiment_id": "nyc_dev_uniform_5s_v3",
+  "summary_policy": "Include current/completed experiments once by experiment_id; exclude superseded and failed runs. Audits are views, never additional experiments or repetitions.",
+  "experiments": [
+    {
+      "experiment_id": "nyc_dev_uniform_5s_v3",
+      "label": "Uniform 5 s + OpenCLIP",
+      "status": "current",
+      "benchmark_record": "experiments/benchmarking_audit_v1/benchmark_record.json",
+      "evidence": "experiments/nyc_dev_uniform_5s_v3/experiment.json",
+      "notes": "Current completed baseline; availability_v2. Benchmark record is an audit of this run, not a new run."
+    },
+    {
+      "experiment_id": "nyc_dev_uniform_5s_v2",
+      "label": "Earlier development baseline",
+      "status": "superseded",
+      "benchmark_record": null,
+      "evidence": "experiments/nyc_dev_uniform_5s_v2/experiment.json",
+      "notes": "Completed under availability_v1. Preserved for provenance; not pooled into current timing statistics."
+    },
+    {
+      "experiment_id": "nyc_dev_uniform_5s_v1",
+      "label": "Initial verification attempt",
+      "status": "failed",
+      "benchmark_record": null,
+      "evidence": "experiments/nyc_dev_uniform_5s_v1/experiment.json",
+      "notes": "Index built, but an overly broad test guard blocked an OS-information subprocess during search. Logs retained; not a completed retrieval benchmark."
+    },
+    {
+      "experiment_id": "diversity_120_broadway46_dev_r01",
+      "label": "Broadway 46 St / diversity 120 frames",
+      "status": "completed",
+      "benchmark_record": "experiments/diversity_120_broadway46_dev_r01/benchmark_record.json",
+      "evidence": "experiments/diversity_120_broadway46_dev_r01/experiment.json",
+      "notes": "Run from configs/experiments.json; configuration snapshot in experiments/diversity_120_broadway46_dev_r01/run_config.json"
+    }
+  ],
+  "datasets": [
+    {
+      "camera_id": "broadway_46st_quad_south",
+      "manifest": "data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.dataset.v2.json"
+    },
+    {
+      "camera_id": "broadway_43st",
+      "manifest": "data/clips/dev/nyc_traffic_000500_001500/broadway_43st.dataset.v2.json"
+    },
+    {
+      "camera_id": "central_park_west_72st",
+      "manifest": "data/clips/dev/nyc_traffic_000500_001500/central_park_west_72st.dataset.v2.json"
+    }
+  ],
+  "update_rates": "data/metadata/nyc_traffic/availability_v2/update_rates.json",
+  "update_rate_scope": "development_300_900"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "description": "Runnable uniform and diversity OpenCLIP experiments. Paths are relative to the repository root. Only entries with saved verified evidence are completed.",
+  "experiments": [
+    {
+      "experiment_id": "nyc_dev_uniform_5s_v3",
+      "label": "Broadway 46 St / uniform 5 s",
+      "method": "uniform",
+      "footage": "data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.mp4",
+      "dataset_manifest": "data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.dataset.v2.json",
+      "interval_seconds": 5.0,
+      "batch_size": 16,
+      "threads": 4,
+      "queries": "experiments/nyc_dev_uniform_5s_v3/queries.json"
+    },
+    {
+      "experiment_id": "uniform_5s_broadway43_dev_r01",
+      "label": "Broadway 43 St / uniform 5 s",
+      "method": "uniform",
+      "footage": "data/clips/dev/nyc_traffic_000500_001500/broadway_43st.mp4",
+      "dataset_manifest": "data/clips/dev/nyc_traffic_000500_001500/broadway_43st.dataset.v2.json",
+      "interval_seconds": 5.0,
+      "batch_size": 16,
+      "threads": 4,
+      "queries": "experiments/nyc_dev_uniform_5s_v3/queries.json"
+    },
+    {
+      "experiment_id": "uniform_5s_cpw72_dev_r01",
+      "label": "Central Park West 72 St / uniform 5 s",
+      "method": "uniform",
+      "footage": "data/clips/dev/nyc_traffic_000500_001500/central_park_west_72st.mp4",
+      "dataset_manifest": "data/clips/dev/nyc_traffic_000500_001500/central_park_west_72st.dataset.v2.json",
+      "interval_seconds": 5.0,
+      "batch_size": 16,
+      "threads": 4,
+      "queries": "experiments/nyc_dev_uniform_5s_v3/queries.json"
+    },
+    {
+      "experiment_id": "diversity_120_broadway46_dev_r01",
+      "label": "Broadway 46 St / diversity 120 frames",
+      "method": "diversity",
+      "footage": "data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.mp4",
+      "dataset_manifest": "data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.dataset.v2.json",
+      "batch_size": 16,
+      "threads": 4,
+      "queries": "experiments/nyc_dev_uniform_5s_v3/queries.json",
+      "max_frames": 120
+    }
+  ]
+}

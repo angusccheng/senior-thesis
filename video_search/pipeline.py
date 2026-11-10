@@ -46,10 +46,11 @@ def build_index(video, sampler: Sampler, encoder, output, batch_size=16, dataset
     properties = stages.call('video_probe', video_properties, video)
     frames = stages.call('timeline_decoding', scan_video, video)
     chosen = stages.call('selection', sampler.select, frames)
-    uniform_candidates = len(chosen)
+    candidates_before_eligibility = len(chosen)
     if dataset is not None:
         with stages.measure('eligibility_filter'):
             chosen = [frame for frame in chosen if dataset.eligible(frame)]
+    encoded_candidates = len(chosen)
     if not chosen:
         raise ValueError('No eligible sampled frames; check sampling and dataset availability')
     if len({f.number for f in chosen}) != len(chosen) or chosen != sorted(chosen, key=lambda f: f.number):
@@ -67,8 +68,21 @@ def build_index(video, sampler: Sampler, encoder, output, batch_size=16, dataset
         batches.append(stages.call('image_encoding_including_preprocess', encoder.encode_images, images))
     if stages.call('source_integrity_recheck', sha256_file, video) != source_hash:
         raise ValueError('Source video changed during indexing')
+    embeddings = np.concatenate(batches).astype(np.float32)
+    # Validate every candidate before selection so discarded invalid features
+    # cannot hide encoder failures. No candidate images are retained in RAM.
+    validate_arrays(embeddings, np.array([f.seconds for f in chosen]),
+                    np.array([f.number for f in chosen], dtype=np.int64))
+    feature_selection = getattr(sampler, 'select_embeddings', None)
+    if feature_selection is not None:
+        positions = stages.call('diversity_selection', feature_selection, embeddings)
+        if (positions.ndim != 1 or positions.dtype != np.int64 or not len(positions)
+                or np.any(positions < 0) or np.any(positions >= len(chosen))
+                or np.any(np.diff(positions) <= 0)):
+            raise ValueError('Feature sampler must return increasing unique candidate positions')
+        chosen = [chosen[i] for i in positions]
+        embeddings = embeddings[positions]
     with stages.measure('index_arrays_and_validation'):
-        embeddings = np.concatenate(batches).astype(np.float32)
         timestamps = np.array([f.seconds for f in chosen], dtype=np.float64)
         frame_numbers = np.array([f.number for f in chosen], dtype=np.int64)
         source_timestamps = dataset.timestamps(chosen) if dataset is not None else None
@@ -85,6 +99,7 @@ def build_index(video, sampler: Sampler, encoder, output, batch_size=16, dataset
         'sampler': sampler.metadata(), 'encoder': stages.call('model_fingerprint', encoder.metadata),
         'preprocess': str(encoder.preprocess), 'environment': environment(),
         'batch_size': batch_size, 'frames': len(chosen),
+        'candidate_frames_encoded': encoded_candidates,
         'embedding_dimension': embeddings.shape[1],
         'embedding_dtype': str(embeddings.dtype),
         'storage': {'embedding_bytes': embeddings.nbytes,
@@ -95,9 +110,12 @@ def build_index(video, sampler: Sampler, encoder, output, batch_size=16, dataset
     }
     if dataset is not None:
         metadata['dataset'] = dataset.metadata
-        metadata['eligibility'] = {'uniform_candidates': uniform_candidates,
-                                   'excluded_candidates': uniform_candidates - len(chosen),
-                                   'rule': 'Apply shared source-time eligibility mask after unchanged uniform selection'}
+        metadata['eligibility'] = {
+            'candidates_before_eligibility': candidates_before_eligibility,
+            'excluded_candidates': candidates_before_eligibility - encoded_candidates,
+            'rule': 'Apply shared source-time eligibility before image encoding and optional feature selection'}
+        if sampler.metadata()['name'] == 'uniform':
+            metadata['eligibility']['uniform_candidates'] = candidates_before_eligibility
         metadata['storage']['source_timestamp_bytes'] = source_timestamps.nbytes
         metadata['storage']['payload_bytes'] += source_timestamps.nbytes
     metadata['indexing_seconds_before_persistence'] = perf_counter() - started

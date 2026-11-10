@@ -9,7 +9,7 @@ camera update rate. MP4 and MOV inputs are both supported.
 The existing camera rectangles are approved and reused unchanged. Their exact
 coordinates, per-camera diagnostic ROIs and source metadata are in the configuration.
 The old preparation report, sample links and detailed initial coordinate-selection
-explanation are preserved in [DATA_PREPARATION_LEGACY.md](DATA_PREPARATION_LEGACY.md).
+explanation are preserved in [DATA_PREPARATION_LEGACY.md](history/DATA_PREPARATION_LEGACY.md).
 
 ## Files and source protection
 

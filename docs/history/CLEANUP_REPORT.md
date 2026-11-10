@@ -2,7 +2,7 @@
 
 The cleanup plan was explicitly approved by the user. The original recording was not moved, modified or deleted. No unique research result, smoke clip, configuration or test was discarded. Before edits, original source/docs/scripts/tests/configs were snapshotted under `archive/pre_cleanup_2026-11-03/`.
 
-[Complete migration and SHA-256 inventory](../experiments/cleanup_2026-11-03.json) · [Executed preservation validation](../experiments/final_validation_2026-11-03/validation.json)
+[Complete migration and SHA-256 inventory](../../experiments/cleanup_2026-11-03.json) · [Executed preservation validation](../../experiments/final_validation_2026-11-03/validation.json)
 
 ## Moves and preserved paths
 

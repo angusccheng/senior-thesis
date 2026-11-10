@@ -1,0 +1,595 @@
+{
+  "benchmark_schema_version": 1,
+  "experiment_id": "diversity_120_broadway46_dev_r01",
+  "evidence_path": "experiments/diversity_120_broadway46_dev_r01/experiment.json",
+  "source": {
+    "video": {
+      "path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.mp4",
+      "sha256": "a4bc3de1c8811d562ae052c15e5a4895afa86403459d6e3713d26cfc2602d4e4",
+      "fps": 1.4079096800053443,
+      "reported_frame_count": 843,
+      "duration_seconds": 598.76,
+      "duration_method": "reported frame count / average FPS; estimate for VFR",
+      "width": 592,
+      "height": 356,
+      "bytes": 18497430,
+      "decoded_frames": 843,
+      "last_frame_seconds": 596.793333,
+      "timestamps": "OpenCV FFmpeg CAP_PROP_POS_MSEC; seconds"
+    },
+    "camera_id": "broadway_46st_quad_south",
+    "dataset_id": "nyc_traffic_dev_000500_001500_v1",
+    "original_recording": {
+      "id": "nyc_traffic",
+      "path": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+      "size_bytes": 5649293214,
+      "mtime_ns": 1793413639635746677,
+      "sampled_sha256": "d107e3b7cdbba5e2b9aaf477f809107026e61a7b3ae6a2c47aba85a43828e366",
+      "metadata": {
+        "width": 2436,
+        "height": 1568,
+        "video_start_seconds": 0.0,
+        "video_end_seconds": 20432.595,
+        "video_duration_seconds": 20432.595,
+        "format_start_time": 0.0,
+        "stream_start_time": 0.0,
+        "avg_frame_rate": "5767000/4086519",
+        "time_base": "1/600",
+        "codec": "h264",
+        "pixel_format": "yuv420p",
+        "duration_basis": "video stream metadata",
+        "ffprobe": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "mime_codec_string": "avc1.4d0033",
+              "width": 2436,
+              "height": 1568,
+              "coded_width": 2436,
+              "coded_height": 1568,
+              "has_b_frames": 2,
+              "pix_fmt": "yuv420p",
+              "level": 51,
+              "color_range": "tv",
+              "color_space": "bt709",
+              "color_transfer": "bt709",
+              "color_primaries": "bt709",
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "60/1",
+              "avg_frame_rate": "5767000/4086519",
+              "time_base": "1/600",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 12259557,
+              "duration": "20432.595000",
+              "bit_rate": "2211520",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "28835",
+              "extradata_size": 31,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "creation_time": "2026-10-30T20:46:47.000000Z",
+                "language": "und",
+                "handler_name": "Core Media Video",
+                "vendor_id": "[0][0][0][0]",
+                "encoder": "H.264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "20432.595000",
+            "size": "5649293214",
+            "bit_rate": "2211874",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "qt  ",
+              "minor_version": "0",
+              "compatible_brands": "qt  ",
+              "creation_time": "2026-10-30T20:46:47.000000Z",
+              "com.apple.quicktime.author": "ReplayKitRecording",
+              "com.apple.quicktime.full-frame-rate-playback-intent": "1"
+            }
+          }
+        }
+      }
+    },
+    "valid_source_intervals": [
+      [
+        0.0,
+        20432.595
+      ]
+    ],
+    "availability": {
+      "path": "/Users/anguscheng/Downloads/video-search-baseline/data/metadata/nyc_traffic/availability_v2/availability.json",
+      "sha256": "84dbc6de742abdfa2aacf1a9904a647e5ea3dc993814e3b6e7ec83e35093f91e"
+    }
+  },
+  "method": {
+    "sampling": {
+      "name": "diversity",
+      "max_frames": 120,
+      "algorithm": "greedy_farthest_first",
+      "distance": "cosine",
+      "initialization": "earliest_eligible_frame",
+      "tie_break": "earliest_remaining_candidate",
+      "candidates": "all_eligible_decoded_frames",
+      "selection_dtype": "float64"
+    },
+    "representation": "OpenCLIP image/text embeddings",
+    "encoder": {
+      "model": "ViT-B-32",
+      "pretrained": "laion2b_s34b_b79k",
+      "weights_sha256": "e3267697543bbe2b3a7bd68f10d1b683ad822a7ad6088f45c32ea33b3c18cc58",
+      "precision": "fp32",
+      "device": "cpu",
+      "seed": 0,
+      "threads": 4
+    },
+    "embedding_dimension": 512,
+    "dtype": "float32",
+    "indexed_items": {
+      "kind": "frame",
+      "count": 120
+    },
+    "inference_settings": {
+      "batch_size": 16,
+      "preprocess": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711))\n)"
+    }
+  },
+  "repetitions": {
+    "indexing": 1,
+    "fresh_process_per_query": 2,
+    "resident_per_query": 3,
+    "query_count": 3,
+    "untimed_resident_warmups": 1
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "indexes/diversity_120_broadway46_dev_r01/index.npz",
+        "role": "retrieval_required",
+        "resolved_path": "/Users/anguscheng/Downloads/video-search-baseline/indexes/diversity_120_broadway46_dev_r01/index.npz",
+        "status": "measured",
+        "bytes": 286178
+      },
+      {
+        "path": "indexes/diversity_120_broadway46_dev_r01/index.metadata.json",
+        "role": "experiment_metadata",
+        "resolved_path": "/Users/anguscheng/Downloads/video-search-baseline/indexes/diversity_120_broadway46_dev_r01/index.metadata.json",
+        "status": "measured",
+        "bytes": 14781
+      },
+      {
+        "path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.mp4",
+        "role": "processed_video",
+        "resolved_path": "/Users/anguscheng/Downloads/video-search-baseline/data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.mp4",
+        "status": "measured",
+        "bytes": 18497430
+      },
+      {
+        "path": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+        "role": "original_video",
+        "resolved_path": "/Users/anguscheng/Desktop/Screen Recording 2026-10-30 at 4.46.46\u202fPM.mov",
+        "status": "measured",
+        "bytes": 5649293214
+      }
+    ],
+    "measured_bytes_by_role": {
+      "temporary": null,
+      "retrieval_required": 286178,
+      "original_video": 5649293214,
+      "preview": null,
+      "processed_video": 18497430,
+      "experiment_metadata": 14781,
+      "shared_model": null
+    },
+    "listed_file_count_by_role": {
+      "temporary": 0,
+      "retrieval_required": 1,
+      "original_video": 1,
+      "preview": 0,
+      "processed_video": 1,
+      "experiment_metadata": 1,
+      "shared_model": 0
+    },
+    "role_status": {
+      "temporary": "not_inventoried",
+      "retrieval_required": "measured",
+      "original_video": "measured",
+      "preview": "not_inventoried",
+      "processed_video": "measured",
+      "experiment_metadata": "measured",
+      "shared_model": "not_inventoried"
+    },
+    "primary_index_bytes": 286178,
+    "primary_status": "measured",
+    "definition": "Actual per-dataset retrieval-required files; shared models, corpus videos, previews, benchmark reports and temporary artifacts reported separately"
+  },
+  "storage_unmeasured": {
+    "shared_model_files": {
+      "status": "unavailable",
+      "value": null,
+      "reason": "Not inventoried; do not equate all cache files with required model storage"
+    },
+    "all_preview_and_temporary_bytes": {
+      "status": "unavailable",
+      "value": null,
+      "reason": "Not aggregated; neither is required by index-only retrieval"
+    }
+  },
+  "timing": {
+    "indexing_end_to_end_seconds": {
+      "unit": "seconds",
+      "count": 1,
+      "samples": [
+        41.7410938750254
+      ],
+      "mean": 41.7410938750254,
+      "median": 41.7410938750254,
+      "minimum": 41.7410938750254,
+      "maximum": 41.7410938750254,
+      "sample_stddev": null,
+      "stddev_reason": "A single measurement cannot estimate variability",
+      "p95": null,
+      "p95_estimator": "nearest-rank ceil(0.95*n)",
+      "p95_min_samples": 100,
+      "p95_reason": "Fewer than 100 samples; tail estimate withheld by protocol"
+    },
+    "indexing_stage_seconds": {
+      "input_fingerprint": {
+        "seconds": 0.027761833043769002,
+        "calls": 1
+      },
+      "dataset_validation": {
+        "seconds": 0.0246269169729203,
+        "calls": 1
+      },
+      "video_probe": {
+        "seconds": 0.10708720807451755,
+        "calls": 1
+      },
+      "timeline_decoding": {
+        "seconds": 1.2037448330083862,
+        "calls": 1
+      },
+      "selection": {
+        "seconds": 4.425004590302706e-05,
+        "calls": 1
+      },
+      "eligibility_filter": {
+        "seconds": 0.0006614590529352427,
+        "calls": 1
+      },
+      "selected_frame_decoding": {
+        "seconds": 0.7323993999743834,
+        "calls": 844
+      },
+      "rgb_to_pil": {
+        "seconds": 0.2841221857815981,
+        "calls": 843
+      },
+      "image_encoding_including_preprocess": {
+        "seconds": 25.840609665610828,
+        "calls": 53
+      },
+      "source_integrity_recheck": {
+        "seconds": 0.019255041959695518,
+        "calls": 1
+      },
+      "diversity_selection": {
+        "seconds": 0.012237875023856759,
+        "calls": 1
+      },
+      "index_arrays_and_validation": {
+        "seconds": 0.0009128329111263156,
+        "calls": 1
+      },
+      "model_fingerprint": {
+        "seconds": 3.349630457931198,
+        "calls": 1
+      },
+      "index_persistence": {
+        "seconds": 0.010283834068104625,
+        "calls": 1
+      },
+      "output_fingerprint": {
+        "seconds": 0.0002527909819036722,
+        "calls": 1
+      }
+    },
+    "source_video_hours_per_wall_hour": 14.344616885046491,
+    "throughput_denominator": "Actual input cropped-video duration, not whole original recording or requested clip-window duration",
+    "fresh_process_query_with_previews_seconds": {
+      "unit": "seconds",
+      "count": 6,
+      "samples": [
+        8.44763133302331,
+        8.001024917000905,
+        11.09317862498574,
+        8.868646792019717,
+        11.324643000029027,
+        8.122046665987
+      ],
+      "mean": 9.309528555507617,
+      "median": 8.658139062521514,
+      "minimum": 8.001024917000905,
+      "maximum": 11.324643000029027,
+      "sample_stddev": 1.5034382166417926,
+      "stddev_reason": null,
+      "p95": null,
+      "p95_estimator": "nearest-rank ceil(0.95*n)",
+      "p95_min_samples": 100,
+      "p95_reason": "Fewer than 100 samples; tail estimate withheld by protocol"
+    },
+    "resident_query_without_previews_seconds": {
+      "unit": "seconds",
+      "count": 9,
+      "samples": [
+        0.054631249979138374,
+        0.029296415974386036,
+        0.03222499997355044,
+        0.039488499984145164,
+        0.03600383305456489,
+        0.030061249970458448,
+        0.02882495801895857,
+        0.0373585419729352,
+        0.034048209083266556
+      ],
+      "mean": 0.0357708842234893,
+      "median": 0.034048209083266556,
+      "minimum": 0.02882495801895857,
+      "maximum": 0.054631249979138374,
+      "sample_stddev": 0.007987603236199316,
+      "stddev_reason": null,
+      "p95": null,
+      "p95_estimator": "nearest-rank ceil(0.95*n)",
+      "p95_min_samples": 100,
+      "p95_reason": "Fewer than 100 samples; tail estimate withheld by protocol"
+    },
+    "pure_cold_query_without_preview_seconds": {
+      "status": "unavailable",
+      "value": null,
+      "reason": "Fresh-process measurement includes preview extraction and result I/O"
+    },
+    "per_query": {
+      "q1": {
+        "text": "Pedestrians crossing a wide crosswalk at a busy city intersection.",
+        "fresh_process_seconds": {
+          "unit": "seconds",
+          "count": 2,
+          "samples": [
+            8.44763133302331,
+            8.001024917000905
+          ],
+          "mean": 8.224328125012107,
+          "median": 8.224328125012107,
+          "minimum": 8.001024917000905,
+          "maximum": 8.44763133302331,
+          "sample_stddev": 0.31579842529086294,
+          "stddev_reason": null,
+          "p95": null,
+          "p95_estimator": "nearest-rank ceil(0.95*n)",
+          "p95_min_samples": 100,
+          "p95_reason": "Fewer than 100 samples; tail estimate withheld by protocol"
+        },
+        "resident_seconds": {
+          "unit": "seconds",
+          "count": 3,
+          "samples": [
+            0.054631249979138374,
+            0.039488499984145164,
+            0.02882495801895857
+          ],
+          "mean": 0.040981569327414036,
+          "median": 0.039488499984145164,
+          "minimum": 0.02882495801895857,
+          "maximum": 0.054631249979138374,
+          "sample_stddev": 0.012967772292547676,
+          "stddev_reason": null,
+          "p95": null,
+          "p95_estimator": "nearest-rank ceil(0.95*n)",
+          "p95_min_samples": 100,
+          "p95_reason": "Fewer than 100 samples; tail estimate withheld by protocol"
+        }
+      },
+      "q2": {
+        "text": "Yellow taxis driving through an intersection.",
+        "fresh_process_seconds": {
+          "unit": "seconds",
+          "count": 2,
+          "samples": [
+            11.09317862498574,
+            8.868646792019717
+          ],
+          "mean": 9.980912708502728,
+          "median": 9.980912708502728,
+          "minimum": 8.868646792019717,
+          "maximum": 11.09317862498574,
+          "sample_stddev": 1.5729815440556145,
+          "stddev_reason": null,
+          "p95": null,
+          "p95_estimator": "nearest-rank ceil(0.95*n)",
+          "p95_min_samples": 100,
+          "p95_reason": "Fewer than 100 samples; tail estimate withheld by protocol"
+        },
+        "resident_seconds": {
+          "unit": "seconds",
+          "count": 3,
+          "samples": [
+            0.029296415974386036,
+            0.03600383305456489,
+            0.0373585419729352
+          ],
+          "mean": 0.03421959700062871,
+          "median": 0.03600383305456489,
+          "minimum": 0.029296415974386036,
+          "maximum": 0.0373585419729352,
+          "sample_stddev": 0.004317069912133102,
+          "stddev_reason": null,
+          "p95": null,
+          "p95_estimator": "nearest-rank ceil(0.95*n)",
+          "p95_min_samples": 100,
+          "p95_reason": "Fewer than 100 samples; tail estimate withheld by protocol"
+        }
+      },
+      "q3": {
+        "text": "A bus passing through a crowded intersection.",
+        "fresh_process_seconds": {
+          "unit": "seconds",
+          "count": 2,
+          "samples": [
+            11.324643000029027,
+            8.122046665987
+          ],
+          "mean": 9.723344833008014,
+          "median": 9.723344833008014,
+          "minimum": 8.122046665987,
+          "maximum": 11.324643000029027,
+          "sample_stddev": 2.2645775852042953,
+          "stddev_reason": null,
+          "p95": null,
+          "p95_estimator": "nearest-rank ceil(0.95*n)",
+          "p95_min_samples": 100,
+          "p95_reason": "Fewer than 100 samples; tail estimate withheld by protocol"
+        },
+        "resident_seconds": {
+          "unit": "seconds",
+          "count": 3,
+          "samples": [
+            0.03222499997355044,
+            0.030061249970458448,
+            0.034048209083266556
+          ],
+          "mean": 0.032111486342425145,
+          "median": 0.03222499997355044,
+          "minimum": 0.030061249970458448,
+          "maximum": 0.034048209083266556,
+          "sample_stddev": 0.001995901989111525,
+          "stddev_reason": null,
+          "p95": null,
+          "p95_estimator": "nearest-rank ceil(0.95*n)",
+          "p95_min_samples": 100,
+          "p95_reason": "Fewer than 100 samples; tail estimate withheld by protocol"
+        }
+      }
+    }
+  },
+  "memory": {
+    "scope": "Process-specific lifetime high-water RSS; excludes child/system memory. Not a warm-query-only allocation delta.",
+    "index_peak_process_ram_bytes": 531464192,
+    "fresh_query_peak_process_ram_bytes": [
+      1165508608,
+      1163067392,
+      689160192,
+      903249920,
+      726941696,
+      1043185664
+    ],
+    "system_wide_peak_ram": {
+      "status": "unavailable",
+      "value": null,
+      "reason": "Not recorded"
+    },
+    "accelerator_peak_memory": {
+      "status": "unavailable",
+      "value": null,
+      "reason": "CPU run; no accelerator peak recorded"
+    }
+  },
+  "environment": {
+    "software_at_run": {
+      "python": "3.11.7",
+      "platform": "macOS-26.5.2-arm64-arm-64bit",
+      "packages": {
+        "numpy": "2.4.6",
+        "opencv-python": "5.0.0.93",
+        "Pillow": "13.0.0",
+        "torch": "2.14.1",
+        "torchvision": "0.29.1",
+        "open_clip_torch": "3.3.0",
+        "timm": "1.0.30"
+      }
+    },
+    "hardware_at_run": {
+      "os": "macOS-26.5.2-arm64-arm-64bit",
+      "architecture": "arm64",
+      "python": "3.11.7",
+      "logical_cpu_count": 8,
+      "inference_device": "cpu",
+      "system_wide_memory_sampling": {
+        "status": "unavailable",
+        "value": null,
+        "reason": "Not collected; process RSS is a different measurement"
+      },
+      "accelerator_model": {
+        "status": "unavailable",
+        "value": null,
+        "reason": "No accelerator discovery performed"
+      },
+      "accelerator_peak_memory": {
+        "status": "unavailable",
+        "value": null,
+        "reason": "CPU run: no accelerator used"
+      },
+      "cpu_model": {
+        "status": "unavailable",
+        "value": null,
+        "reason": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+      },
+      "physical_ram_bytes": {
+        "status": "unavailable",
+        "value": null,
+        "reason": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+      }
+    }
+  },
+  "ground_truth_accuracy": {
+    "status": "unavailable",
+    "value": null,
+    "reason": "No annotated event intervals; qualitative examples do not establish accuracy"
+  },
+  "measurement_boundaries": {
+    "indexing": "Fresh process: interpreter/imports, model loading, decoding, selection, inference, validation, persistence and metadata output.",
+    "common_dataset_preparation": "Input is an already prepared clip and availability protocol. Shared cropping/availability costs are separate, not silently charged to only one strategy.",
+    "strategy_required_preprocessing": "Must occur inside total strategy timing, including full-video selection scans or feature precomputation.",
+    "fresh_process_queries": "Includes model loading, NPZ/validation, text encoding, ranking, cropped-video previews and result I/O; OS caches not cleared.",
+    "resident_queries": "Resident model/cached fingerprint; one untimed warm-up; 3 rounds of 3 queries; NPZ reloaded; no previews."
+  }
+}

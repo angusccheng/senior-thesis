@@ -36,3 +36,52 @@ class UniformSampler:
 
     def metadata(self) -> dict:
         return {"name": "uniform", **asdict(self)}
+
+
+@dataclass(frozen=True)
+class DiversitySampler:
+    """Greedy farthest-first coverage of unit OpenCLIP embeddings.
+
+    All eligible decoded frames are candidates. Start at the earliest frame,
+    then maximize distance to the nearest selected frame. Ties choose the
+    earliest remaining candidate. Return chronological positions for storage.
+    """
+    max_frames: int
+
+    def __post_init__(self):
+        if type(self.max_frames) is not int or self.max_frames <= 0:
+            raise ValueError('Diversity max_frames must be a positive integer')
+
+    def select(self, frames: list[FrameInfo]) -> list[FrameInfo]:
+        return list(frames)
+
+    def select_embeddings(self, embeddings):
+        vectors = np.asarray(embeddings)
+        if (vectors.ndim != 2 or not len(vectors) or not vectors.shape[1]
+                or not np.isfinite(vectors).all()
+                or not np.allclose(np.linalg.norm(vectors, axis=1), 1, atol=1e-5)):
+            raise ValueError('Diversity selection needs finite unit embedding vectors')
+        # Float64 arithmetic and chronological argmax make selection reproducible.
+        vectors = vectors.astype(np.float64)
+        count = min(self.max_frames, len(vectors))
+        selected = np.empty(count, dtype=np.int64)
+        nearest = np.full(len(vectors), np.inf)
+        used = np.zeros(len(vectors), dtype=bool)
+        current = 0
+        for step in range(count):
+            selected[step] = current
+            used[current] = True
+            distance = np.clip(1 - vectors @ vectors[current], 0, 2)
+            nearest = np.minimum(nearest, distance)
+            nearest[used] = -np.inf
+            if step + 1 < count:
+                current = int(np.argmax(nearest))
+        return np.sort(selected)
+
+    def metadata(self):
+        return {'name': 'diversity', 'max_frames': self.max_frames,
+                'algorithm': 'greedy_farthest_first', 'distance': 'cosine',
+                'initialization': 'earliest_eligible_frame',
+                'tie_break': 'earliest_remaining_candidate',
+                'candidates': 'all_eligible_decoded_frames',
+                'selection_dtype': 'float64'}

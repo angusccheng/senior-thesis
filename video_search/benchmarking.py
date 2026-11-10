@@ -234,4 +234,4 @@ def baseline_record(data, index_path, evidence_path):
             'common_dataset_preparation': 'Input is an already prepared clip and availability protocol. Shared cropping/availability costs are separate, not silently charged to only one strategy.',
             'strategy_required_preprocessing': 'Must occur inside total strategy timing, including full-video selection scans or feature precomputation.',
             'fresh_process_queries': 'Includes model loading, NPZ/validation, text encoding, ranking, cropped-video previews and result I/O; OS caches not cleared.',
-            'resident_queries': 'Resident model/cached fingerprint; one untimed warm-up; 3 rounds of 3 queries; NPZ reloaded; no previews.'}}
+            'resident_queries': f'Resident model/cached fingerprint; one untimed warm-up; 3 rounds of {len(data["queries"])} queries; NPZ reloaded; no previews.'}}

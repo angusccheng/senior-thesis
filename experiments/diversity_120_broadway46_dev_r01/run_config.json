@@ -1,0 +1,16 @@
+{
+  "catalog": "configs/experiments.json",
+  "experiment": {
+    "experiment_id": "diversity_120_broadway46_dev_r01",
+    "label": "Broadway 46 St / diversity 120 frames",
+    "method": "diversity",
+    "footage": "data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.mp4",
+    "dataset_manifest": "data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.dataset.v2.json",
+    "batch_size": 16,
+    "threads": 4,
+    "queries": "experiments/nyc_dev_uniform_5s_v3/queries.json",
+    "max_frames": 120
+  },
+  "command": "/Users/anguscheng/Downloads/video-search-baseline/.venv/bin/python scripts/run_development_experiment.py --dataset-manifest data/clips/dev/nyc_traffic_000500_001500/broadway_46st_quad_south.dataset.v2.json --index indexes/diversity_120_broadway46_dev_r01/index.npz --results results/retrieval/diversity_120_broadway46_dev_r01 --output experiments/diversity_120_broadway46_dev_r01 --method diversity --batch-size 16 --threads 4 --queries experiments/nyc_dev_uniform_5s_v3/queries.json --max-frames 120",
+  "returncode": 0
+}

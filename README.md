@@ -2,10 +2,16 @@
 
 Research backend for natural-language retrieval from continuous video. It prepares
 independent camera clips, records source-time and availability metadata, and indexes
-uniformly sampled frames with pretrained OpenCLIP. Retrieval uses exact cosine
-similarity. No frontend, captions, hybrid representations or other indexing methods
+frames selected uniformly or for appearance diversity with pretrained OpenCLIP. Retrieval uses exact cosine
+similarity. No frontend, captions, hybrid representations or change-aware sampling
 are implemented.
 
+
+**[Run both methods and interpret their results](docs/RUNNING_METHODS.md)** is the command walkthrough.
+
+**Start with [Results overview](docs/RESULTS_OVERVIEW.md)** for the current stats table,
+prepared clips and missing measurements. [The truck demo](docs/DISTINCT_EVENT_DEMO.md)
+is the meeting walkthrough. Earlier reports live in [docs/history](docs/history/README.md).
 
 The thesis objective, measurement boundaries, baseline instrumentation audit, and
 reusable JSON cost schema are documented in [BENCHMARKING.md](docs/BENCHMARKING.md).
@@ -49,7 +55,7 @@ brew install ffmpeg           # macOS; Ubuntu/Debian: sudo apt install ffmpeg
 
 Use a recent FFmpeg with libx264. Python 3.11/macOS arm64 is the tested environment.
 First model use downloads weights; `HF_HUB_OFFLINE=1` uses the existing local cache.
-See [baseline implementation details](docs/BASELINE_USAGE.md).
+See [baseline implementation details](docs/history/BASELINE_USAGE.md).
 
 ## Add and prepare recordings
 
@@ -106,6 +112,59 @@ intervals are not yet annotated, so no retrieval-accuracy claim is made.
 that mode has no camera-specific availability/source-grid provenance. Research runs
 on prepared camera videos should always pass an explicit, shared manifest.
 
+## Define, run and compare experiments
+
+**[configs/experiments.json](configs/experiments.json) is the runnable catalog.**
+Each named entry lists `method`, `footage`, `dataset_manifest`, sampling interval,
+query file, batch size and threads. The overview shows these settings alongside
+current/planned status. Uniform and diversity sampling use the same fixed OpenCLIP encoder. See
+[Method 2: diversity sampling](docs/DIVERSITY_SAMPLING.md) for its exact rule and costs.
+
+```bash
+# See each method + footage + status together
+.venv/bin/python scripts/run_experiment.py list
+
+# Display saved stats and top-five results (no computation)
+.venv/bin/python scripts/run_experiment.py results --id diversity_120_broadway46_dev_r01
+
+# Inspect all settings, output paths and the exact command (no computation)
+.venv/bin/python scripts/run_experiment.py show --id uniform_5s_broadway43_dev_r01
+
+# Preview a planned run; remove --dry-run to execute it
+.venv/bin/python scripts/run_experiment.py run --id uniform_5s_broadway43_dev_r01 --dry-run
+```
+
+An executed entry builds the index, runs its queries in fresh processes and with
+a resident model, verifies timestamps/rankings/previews, and saves a configuration
+snapshot with the evidence. Successful runs register automatically and refresh the
+stats tables, and prints a readable stats/result summary in the terminal.
+Failed attempts keep their logs and do not become completed rows.
+Index, retrieval and evidence folders all use the same experiment ID. Existing
+outputs are protected; copy an entry with a **new ID** for another repetition.
+
+The Broadway 46 St uniform entry identifies the original benchmark. The diversity
+entry uses that same clip and retains 120 frames. Other-camera uniform entries
+remain planned until executed. All three reuse the original three-query file;
+these are demonstration queries, with no annotated accuracy yet. For a sampling
+comparison, repeat the **same footage and query file** at another interval under a
+new ID; compare actual measured bytes. Runs on other clips extend dataset coverage.
+
+
+[experiments/summary.csv](experiments/summary.csv) stores one row per registered,
+completed comparison run, with units, repetition counts and reasons for missing
+measurements. [experiments/registry.json](experiments/registry.json) identifies the
+current run and preserves superseded/failed attempts separately. An audit is a
+view of an existing run and is never counted as another experiment.
+
+Refresh the tables from saved JSON without processing video or loading a model:
+
+```bash
+.venv/bin/python scripts/summarize_experiments.py
+```
+
+Use the same clip, model, eligibility policy, queries and storage definition for
+future controlled comparisons. Accuracy remains pending event annotations.
+
 ## Verify and reproduce
 
 ```bash
@@ -121,7 +180,7 @@ cosine/image checks, timing, memory measurements and limitations are documented 
 
 See [CAMERA_AVAILABILITY.md](docs/CAMERA_AVAILABILITY.md) for outages, uncertain
 intervals, usable-duration accounting and camera update-rate measurements. The
-[earlier sample-video verification](docs/baseline_verification.md) remains preserved.
+[earlier sample-video verification](docs/history/baseline_verification.md) remains preserved.
 
 ## GitHub checkout and local research artifacts
 

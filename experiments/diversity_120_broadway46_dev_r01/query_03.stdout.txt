@@ -1,0 +1,6 @@
+#1 00:05:26.405 cosine=0.326529
+#2 00:04:56.355 cosine=0.320535
+#3 00:03:10.303 cosine=0.320511
+#4 00:05:18.438 cosine=0.318646
+#5 00:07:46.592 cosine=0.314778
+Saved results to results/retrieval/diversity_120_broadway46_dev_r01/query_03; cosine scores are not probabilities.

@@ -7,7 +7,7 @@ from pathlib import Path
 
 from video_search.encoder import MODEL_NAME, PRETRAINED, OpenCLIPEncoder
 from video_search.pipeline import build_index, export_previews, load_index, search_index, sha256_file
-from video_search.samplers import UniformSampler
+from video_search.samplers import UniformSampler, DiversitySampler
 
 
 def positive_int(value):
@@ -30,6 +30,7 @@ def main():
     sub = parser.add_subparsers(dest='command', required=True)
     index = sub.add_parser('index', help='Select frames and build an index')
     index.add_argument('--video', required=True, type=Path)
+    index.add_argument('--method', choices=['uniform', 'diversity'], default='uniform')
     index.add_argument('--interval', type=float, default=5)
     index.add_argument('--max-frames', type=positive_int)
     index.add_argument('--batch-size', type=positive_int, default=16)
@@ -50,7 +51,10 @@ def main():
     args = parser.parse_args()
     try:
         if args.command == 'index':
-            sampler = UniformSampler(args.interval, args.max_frames)
+            if args.method == 'diversity' and args.max_frames is None:
+                raise ValueError('Diversity sampling requires --max-frames')
+            sampler = (DiversitySampler(args.max_frames) if args.method == 'diversity'
+                       else UniformSampler(args.interval, args.max_frames))
             if not args.video.is_file():
                 raise FileNotFoundError(args.video)
             if args.index.exists():

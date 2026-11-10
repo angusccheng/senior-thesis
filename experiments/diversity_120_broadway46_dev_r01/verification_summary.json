@@ -1,0 +1,23 @@
+{
+  "method": "diversity",
+  "experiment_id": "diversity_120_broadway46_dev_r01",
+  "unit_tests_passed": 44,
+  "unit_test_command": ".venv/bin/python -m unittest discover -s tests -v",
+  "compilation_command": ".venv/bin/python -m compileall -q main.py video_search scripts",
+  "real_video_checks": {
+    "diversity_budget_and_eligibility": true,
+    "finite_unit_embeddings": true,
+    "fresh_process_queries_repeat_identically": true,
+    "original_not_accessed_no_reencoding_no_image_embedding_recompute": true,
+    "independent_diversity_selection_and_embeddings": true,
+    "independent_cosine_and_rankings": true,
+    "all_preview_jpegs_match_cropped_frame": true,
+    "retrieval_source_times_match_export_csv": true,
+    "index_unchanged": true
+  },
+  "original_small_research_evidence_files_unchanged": 128,
+  "local_markdown_links_checked": 184,
+  "truck_query_results": "results/retrieval/diversity_white_box_truck/results.json",
+  "comparison_scope": "Matched retained-frame count (120), not exact bytes; no annotated retrieval accuracy; one build per method",
+  "algorithm_reference": "https://www.cs.columbia.edu/~verma/classes/uml/ref/clustering_minimize_intercluster_distance_gonzalez.pdf"
+}

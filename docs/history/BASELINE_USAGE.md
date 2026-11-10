@@ -6,8 +6,8 @@ A research baseline for comparing frame selection under fixed storage budgets.
 It loads an MP4, selects frames, embeds them with OpenCLIP, and ranks the retained
 frames against a natural-language query. There is no training or approximate search.
 
-For the seven-camera NYC screen recording, see [DATA_PREPARATION.md](DATA_PREPARATION.md)
-and [configs/nyc_traffic.json](../configs/nyc_traffic.json). The separate `prepare_data.py`
+For the seven-camera NYC screen recording, see [DATA_PREPARATION.md](../DATA_PREPARATION.md)
+and [configs/nyc_traffic.json](../../configs/nyc_traffic.json). The separate `prepare_data.py`
 workflow exports camera crops, preserves timestamp mappings and diagnoses visible
 update rates. Short samples are ready for crop review; full-length exports remain blocked.
 

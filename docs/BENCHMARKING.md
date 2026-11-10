@@ -17,6 +17,15 @@ The truck example is a qualitative demonstration selected after viewing the clip
 It is not held-out accuracy evidence. No retrieval accuracy can be reported until
 queries have annotated ground-truth event intervals.
 
+Current tables: [Results overview](RESULTS_OVERVIEW.md) and
+[CSV](../experiments/summary.csv). Refresh with
+`.venv/bin/python scripts/summarize_experiments.py`; this reads metadata only.
+Historical attempts are labeled in the [registry](../experiments/registry.json).
+
+The second implemented selection method is [diversity sampling](DIVERSITY_SAMPLING.md).
+Its first comparison matches retained-frame count; actual index bytes are reported
+separately. Retrieval accuracy and strict matched-byte comparisons remain pending.
+
 ## What the baseline already measured
 
 The saved development experiment is
